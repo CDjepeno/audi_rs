@@ -1,0 +1,396 @@
+/* GLOBAL */
+.fa {
+    font-size: 3rem;
+}
+
+.fa-circle {
+    font-size: 2rem;
+    color: green;
+}
+
+.user {
+    color: white;
+}
+
+.main {
+    width: 80%;
+}
+
+#bar {
+    display: none;
+}
+
+.dashbord {
+    display: flex;
+}
+
+#description::placeholder {
+    color:  rgba(255, 255, 255, 0.404);
+}
+
+#title::placeholder {
+    color:  rgba(255, 255, 255, 0.404);
+}
+
+#price::placeholder {
+    color:  rgba(255, 255, 255, 0.404);
+}
+
+
+
+/********** ASIDE **********/
+.aside {
+    border-collapse: collapse;
+    background-color: black;
+    width: 20%;
+    height: 80vh;
+    padding-bottom: 5rem;
+}
+
+.aside thead tr td {
+    padding: 1rem;
+    border: none;
+}
+
+.aside tbody tr td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.aside tbody td:hover {
+    background-color: #1C1F23;
+}
+
+.aside img {
+    width: 40rem;
+}
+
+.aside .td {
+    height: 20rem;
+}
+
+.aside tfoot td {
+    padding-bottom: 10rem;
+}
+
+/********** MAIN ***********/
+
+/* Acceuil */
+.main h1 {
+    margin-top: 1rem;
+}
+
+.main .perso {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.main .perso th {
+    border: 1px solid red;
+    width:60rem;
+    padding: 1rem;
+}
+
+.main .perso td {
+    border: 1px solid red;
+    width:60rem;
+    padding: 1rem;
+}
+
+/* véhicule commandé */
+.main_c {
+    margin: 20px auto;
+}
+
+.main_c .commande {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+}
+
+.main_c .commande th {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem;
+}
+.main_c .commande a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main_c .commande td {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem;
+} 
+
+/* Détail véhicule commander */
+.main_d {
+    margin: 20px auto;
+}
+
+.main_d .detail {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+}
+
+.main_d .detail {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.main_d .detail th {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.main_d .detail td {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem;
+} 
+
+.detail tbody img{
+    width: 20rem;
+}
+/* ajouter un véhicule */
+
+.form_addcars #add_cars {
+    margin: auto;
+}
+
+.form_addcars {
+    margin: 6rem auto;
+	padding: 30px 30px;
+    width: 30%;
+    height: 50vh;
+	border-radius: 10px ;
+	background-color: rgba(255, 255, 255, 0.404);
+}
+
+.form_addcars table tr {
+    margin-bottom:10rem;
+}
+
+
+#add_cars table {
+    width: 100%;
+}
+
+#add_cars .title,.content,.price {
+    width: 100%;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 8px 0;
+	margin: 4rem 3rem;
+    border-bottom: 1px solid red;  
+}
+
+#add_cars .submit {
+    text-align: center;
+}
+
+.title input {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+	color: white;
+}
+
+.content textarea {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+    color: white;
+    width: 100%;
+}
+
+.price input {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+    color: white;
+}
+
+.category {
+    position: relative;
+    font-family: Arial;
+}
+
+.category #cat {
+    background: none;
+    margin: 1rem;
+    width: 90%;
+    padding: 1rem;
+}
+
+#add_cars button {
+	width: 100%;
+	background: none;
+	border: 2px solid red;
+	color: white;
+	padding: 1rem;
+	margin: 1rem auto;
+	cursor: pointer;
+}
+
+#name_addcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#description_addcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#price_addcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+
+/* véhicule en vente */
+.dashbord #product {
+    margin: 2rem;
+    width: 30%;
+    color:white;
+}
+/* modifier un véhicule */
+.form_editcars {
+    margin: 6rem auto;
+	padding: 30px 30px;
+    width: 30%;
+    height: 50vh;
+	border-radius: 10px ;
+    background-color: rgba(255, 255, 255, 0.404);
+    margin: auto;
+}
+#edit_cars table {
+    width: 100%;
+}
+#edit_cars .title,.content,.price {
+    width: 100%;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 8px 0;
+	margin: 4rem 3rem;
+    border-bottom: 1px solid red;  
+}
+#edit_cars button {
+	width: 100%;
+	background: none;
+	border: 2px solid red;
+	color: white;
+	padding: 1rem;
+	margin: 1rem auto;
+	cursor: pointer;
+}
+#name_editcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#description_editcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#price_editcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+
+/* Wishlist */
+
+
+
+/************** Responsive *************** /
+
+
+/******************** mobile 480px ********************/
+  
+@media screen and (max-width:480px) {
+    #bar {
+        display: block;
+        width: 100%;
+    }
+    .aside {
+        position : fixed;
+        /* height: 100vh; */
+        width: 100%;
+        display: none;
+        transition: all 1s ease-out;
+    }
+    .aside td {
+        width: 100%;
+    }
+    .aside img {
+        width: 100%;
+    }
+    .aside.open {
+        display: block;
+        position : fixed;
+        height: 100vh;
+        z-index: 1;
+        width: 100%;
+    }
+    .main_c .commande {
+        width: 60%;
+        font-size: 1.3rem;
+    }
+    .main_d .detail {
+        width: 60%;
+        font-size: 1.3rem;
+    }
+    .dashbord #cars {
+        width: 80%;
+        margin: auto;
+    }
+    .dashbord #product {
+        width: 80%;
+    }
+    .form_addcars {
+        width: 80%;
+    }
+    .form_editcars {
+        width: 80%;
+    }
+    #edit_cars h1 {
+          font-size: 2rem;
+    }
+    #add_cars h1 {
+          font-size: 2rem;
+    }
+}
+
+/******************** tablette 481px - 960px ********************/
+@media screen and (min-width:481px) and (max-width:960px){
+    .dashbord #cars {
+		display: flex;
+		width: 100%;
+    }
+    .main_c .commande {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    .main_add #add_cars {
+        margin: auto;
+    }
+    .form_addcars {
+        width: 60%;
+    }
+    .form_editcars {
+        width: 60%;
+    }
+    #edit_cars h1 {
+        font-size: 2rem;
+    }
+    #add_cars h1 {
+        font-size: 2rem;
+    }
+
+ 
+}
+
+

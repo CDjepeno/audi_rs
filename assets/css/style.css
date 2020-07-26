@@ -1,0 +1,519 @@
+/********** FONT FACE **********/
+@font-face {
+	font-family: "Amaranth";
+	src: url("../fonts/amaranth.otf");
+}
+
+/********** GLOBAL **********/
+html {
+	font-size: 62.5%
+}
+
+* {
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+	transition: all .1s ease 0s;
+    /* Visualisation des éléments */
+	/*border: 1px dotted rgba(0,0,0,0.3);*/
+	margin: 0px;
+	padding: 0px;
+}
+
+*:hover {
+	transition: all .3s ease 0s;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 1.6;
+	color: rgba(0,0,0,0.5);
+	
+}
+
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+}
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+
+/* BUTTON */
+.btn {
+	display: inline-block;
+}
+
+body {
+	font-family: "Open Sans", Arial, sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #1C1F23;
+	font-size: 1.6rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: white;
+}
+
+main h1 {
+	font-family: "Merriweather";
+	font-weight: normal;
+	font-size: 4rem;
+}
+
+main h2 {
+	font-family: "Merriweather";
+	font-weight: normal;
+	font-size: 2.5rem;
+	color: silver;
+}
+
+main h2 span {
+	background-color: white;
+	padding: 1rem;
+}
+
+main h3 {
+	font-family: "Amaranth";
+	font-weight: normal;
+	font-size: 2rem;
+	color: #666;
+	margin: 0;
+}
+
+.btn {
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	padding: 1.5rem 2rem;
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: red;
+	color: white;
+}
+
+article {
+	text-align: center;
+}
+
+p{
+	color:#D3CECA;
+}
+
+/**************** NAV **************/
+.form_register h2 {
+	margin-left: 1rem;
+}
+.nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
+.nav nav {
+	display: flex;
+	justify-content: flex-end;
+	padding: 2.5rem 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: -73px;
+	margin: 10px;
+}
+
+.nav nav a {
+	color: white;
+	padding: 1rem 1.5rem;
+	text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+	font-family: "Amaranth";
+}
+/**************** HEADER VISITEUR ***************/
+.header_visiteur a {
+	size:2rem;
+	font-family:"Amaranth";
+}
+
+.header_visiteur {
+	width: 100%;
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding:5rem;
+}
+
+.toggle {
+	padding: 10px 20px;
+	text-align: right;
+}
+
+.member img {
+	margin-left: 4rem;
+	width: 9rem;
+}
+
+.member img:hover {
+	-webkit-transform: scale(1.0);
+	transform: scale(1.1);
+}
+
+.member {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-top: 2.5rem;
+	text-align:center;
+}
+
+.member2 {
+	display: none;
+}
+
+
+header .fa {
+	color:white;
+	font-size: 3rem;
+	/* display: none; */
+}
+
+.header_visiteur h2:hover {
+	color:#EF232E;
+}
+
+
+.header_visiteur nav a:hover {
+	background-color: #EF232E;
+	color: white;
+}
+
+
+
+/*************** HEADER_DASHBOARD ****************/
+.header_dashboard {
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 45% 28%;
+	color: white;
+	padding:5rem;
+}
+
+.header_dashboard h2:hover {
+	color:red;
+}
+
+.header_dashboard nav a:hover {
+	background-color: red;
+	color: white;
+}
+
+
+/********** SLIDER **********/
+#slider {
+	-webkit-backface-visibility: hidden;
+	text-align: center;
+	/* width: 120rem; */
+	margin-top: 25px;
+	border: 20px ridge black;
+	margin: 20px auto;
+}
+.slides img {
+	height: 40rem;
+	padding: 1em;
+	padding: 1em;
+}
+
+.main {
+	display: block;
+}
+
+#next, #prew {
+	padding: 2rem;
+	border: none;
+	background: rgba(128,128,128,0.5);
+	font-size: 3rem;
+	color: black;
+	position: absolute;
+	top: 65%;
+}
+
+#next {
+	margin-left: 102rem;
+}
+
+#prew {
+	margin-left: 2rem;
+}
+
+/************ Nos services ************/
+
+#article article {
+	width: 30%;
+}
+
+#article .fa {
+	color: white;
+	size: 203px;
+}
+
+#article {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+}
+
+#article h2 {
+	color: white;
+}
+
+
+/************ Véhicule index ***********/
+#cars  {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#product {
+	border: 10px ridge black;
+	display: block;
+	margin-bottom: 2rem;
+	text-align: center;
+	width:40%;
+}
+
+#product img {
+	margin:auto;
+	margin-left: -19px;
+}
+
+.img {
+	margin: 0 10px;
+	width:100%;
+	text-align:center;
+	display: block;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.img img:hover {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.description {
+	text-align: center;
+	margin: auto;
+	width:100%;
+}
+
+.description h2,h3 {
+	vertical-align: middle;
+}
+
+/************ Véhicule catégory ***********/
+.container_cat {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#product_cat {
+	border: 10px ridge black;
+	display: block;
+	margin: 2rem auto;
+	text-align: center;
+	width:40%;
+	color: white;
+}
+
+/************ Véhicule seul ***********/
+#product_only {
+	border: 10px ridge goldenrod;
+	display: block;
+	margin: 2rem auto;
+	text-align: center;
+	padding: 2rem;
+	width:80%;
+}
+#product_only h2 {
+	color: goldenrod;
+	text-transform: uppercase;
+}
+#product_only h3 {
+	color: goldenrod;
+}
+
+/********** FOOTER ***********/
+
+footer {
+	width: 100%;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	color: white;
+	padding: 2rem;
+}
+
+footer img {
+	width: 20rem;
+}
+
+footer img:hover {
+	-webkit-transform: scale(1.0);
+	transform: scale(1.1);
+}
+
+footer h2:hover {
+	-webkit-transform: scale(1.0);
+	transform: scale(1.1);
+}
+
+
+/************** Responsive *************** /
+
+
+/********************mobile 480px***********************/
+@media screen and (max-width:480px){
+	#slider {
+		display: none;
+	}
+	#article article {
+		display: none;
+	}
+	#cars  {
+		display: block;
+	}
+	#product_only {
+		width: 100%;
+	}
+	#product {
+		border: 10px ridge black;
+		display: block;
+		margin: 2rem auto;
+		text-align: center;
+		width:80%;
+	}
+	.header_visiteur {
+		max-width: 100%;
+		background-image: url('../img/header.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		color: white;
+		padding:5rem;
+		margin: auto;
+	}
+	.nav nav {
+		display: flex;
+		flex-direction: column;
+		padding: 2.5rem 0;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: -73px;
+		margin: 10px;
+		text-align: center;
+	}
+	.nav nav a {
+		margin: 1rem;
+	}
+	.member {
+		text-align: center;
+		display: block;
+		align-items: center;
+		margin-top: 8rem;
+	}
+	.member img {
+		margin: 2rem;
+	}
+	.container_cat {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+	#product {
+		border: 10px ridge black;
+		display: block;
+		margin-bottom: 2rem;
+		text-align: center;
+		width:80%;
+	}
+	#product_cat {
+		border: 10px ridge black;
+		display: block;
+		margin: 2rem auto;
+		text-align: center;
+		width:60%;
+	}
+	.main {
+		margin: auto;
+	}
+}
+
+
+
+/*****************tablette 481px - 960px**********************/
+@media screen and (min-width:481px) and (max-width:960px){
+	.header_visiteur {
+		max-width: 100%;
+		background-image: url('../img/header.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		color: white;
+		padding:5rem;
+		margin: auto;
+	}
+	.member {
+		display: block;
+	}
+	.member2 {
+		display: block;
+		text-align: center;
+	}
+	.member2 img {
+		margin-top: 2rem;
+		width: 10rem;
+	}
+	.container {
+		width: 70%;
+		margin: auto;
+	}
+	#article article {
+		display: none;
+	}
+	#cars {
+		display: block;
+		width: 100%;
+	}
+	#product {
+		border: 10px ridge black;
+		display: block;
+		margin: 1rem auto;
+		width:50rem;
+	}
+}
