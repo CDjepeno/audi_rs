@@ -168,11 +168,16 @@
     margin: auto;
 }
 
+
+.form_addcars #add_cars  h1{
+    font-size: 2rem;
+}
+
 .form_addcars {
     margin: 6rem auto;
 	padding: 30px 30px;
     width: 30%;
-    height: 50vh;
+    height: 60vh;
 	border-radius: 10px ;
 	background-color: rgba(255, 255, 255, 0.404);
 }
@@ -267,7 +272,7 @@
     margin: 6rem auto;
 	padding: 30px 30px;
     width: 30%;
-    height: 50vh;
+    height: 60vh;
 	border-radius: 10px ;
     background-color: rgba(255, 255, 255, 0.404);
     margin: auto;
@@ -353,9 +358,11 @@
     }
     .form_addcars {
         width: 80%;
+        height: 70vh;
     }
     .form_editcars {
         width: 80%;
+        height: 70vh;
     }
     #edit_cars h1 {
           font-size: 2rem;
@@ -380,9 +387,12 @@
     }
     .form_addcars {
         width: 60%;
+        height: 70vh;
     }
     .form_editcars {
         width: 60%;
+        height: 70vh;
+
     }
     #edit_cars h1 {
         font-size: 2rem;
