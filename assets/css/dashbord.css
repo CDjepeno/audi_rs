@@ -84,6 +84,7 @@
 
 .main .perso {
     border-collapse: collapse;
+    width: 80%;
     text-align: center;
     margin: 50px auto;
 }
