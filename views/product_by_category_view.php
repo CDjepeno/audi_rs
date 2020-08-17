@@ -15,7 +15,5 @@
     <?php endforeach ?>
 </div>
 
-
-
 <?php include_once "footer_view.php" ?>
 

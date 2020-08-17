@@ -36,8 +36,6 @@
     color:  rgba(255, 255, 255, 0.404);
 }
 
-
-
 /********** ASIDE **********/
 .aside {
     border-collapse: collapse;
@@ -101,6 +99,13 @@
     padding: 1rem;
 }
 
+/* véhicule en vente */
+.dashbord #product {
+    margin: 2rem;
+    width: 30%;
+    color:white;
+}
+
 /* véhicule commandé */
 .main_c {
     margin: 20px auto;
@@ -159,7 +164,7 @@
     padding: 1rem;
 } 
 
-.detail tbody img{
+.detail tbody img {
     width: 20rem;
 }
 /* ajouter un véhicule */
@@ -168,14 +173,13 @@
     margin: auto;
 }
 
-
-.form_addcars #add_cars  h1{
+.form_addcars #add_cars  h1 {
     font-size: 2rem;
 }
 
 .form_addcars {
     margin: 6rem auto;
-	padding: 30px 30px;
+	padding: 3rem 3rem;
     width: 30%;
     height: 60vh;
 	border-radius: 10px ;
@@ -185,7 +189,6 @@
 .form_addcars table tr {
     margin-bottom:10rem;
 }
-
 
 #add_cars table {
     width: 100%;
@@ -261,21 +264,18 @@
 	color: rgba(255, 255, 255, 0.404);
 }
 
-/* véhicule en vente */
-.dashbord #product {
-    margin: 2rem;
-    width: 30%;
-    color:white;
-}
 /* modifier un véhicule */
 .form_editcars {
     margin: 6rem auto;
-	padding: 30px 30px;
+	padding: 3rem 3rem;
     width: 30%;
     height: 60vh;
 	border-radius: 10px ;
     background-color: rgba(255, 255, 255, 0.404);
     margin: auto;
+}
+.form_editcars h1 {
+    font-size: 2rem;
 }
 #edit_cars table {
     width: 100%;
@@ -309,10 +309,7 @@
 
 /* Wishlist */
 
-
-
 /************** Responsive *************** /
-
 
 /******************** mobile 480px ********************/
   
@@ -323,7 +320,6 @@
     }
     .aside {
         position : fixed;
-        /* height: 100vh; */
         width: 100%;
         display: none;
         transition: all 1s ease-out;
@@ -373,7 +369,7 @@
 }
 
 /******************** tablette 481px - 960px ********************/
-@media screen and (min-width:481px) and (max-width:960px){
+@media screen and (min-width:481px) and (max-width:960px) {
     .dashbord #cars {
 		display: flex;
 		width: 100%;
@@ -392,7 +388,6 @@
     .form_editcars {
         width: 60%;
         height: 70vh;
-
     }
     #edit_cars h1 {
         font-size: 2rem;
@@ -400,8 +395,6 @@
     #add_cars h1 {
         font-size: 2rem;
     }
-
- 
 }
 
 

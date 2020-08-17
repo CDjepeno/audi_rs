@@ -1,5 +1,7 @@
 "Use strict";
+
 /************ Vérification formulaire login ************/
+
 let envoi_login = document.getElementById('login');
 let mail =  document.getElementById('mail_login');
 let password =  document.getElementById('password_login');
