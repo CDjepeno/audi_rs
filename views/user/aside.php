@@ -1,4 +1,7 @@
 <!-- asside -->
+<?php
+$session = new session();
+?>
 <table class="aside">
     <thead>
         <tr>
