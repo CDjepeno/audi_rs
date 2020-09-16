@@ -2,6 +2,11 @@
 
 class ProductController extends AbstractController
 {
+    public function __construct() {
+
+        $session = new session();
+
+    }
     /**
      * Fonction permettant de voir un produit par catégory
      *
