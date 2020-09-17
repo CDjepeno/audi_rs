@@ -1,4 +1,5 @@
 <?php require_once  "header_dashbord.php" ?>
+
 <div id="bar">
         <i class="fa fa-bars"></i>
     </div>
@@ -46,8 +47,6 @@
                     </td>
                 </tr>
             </table>
-        </form>
-        <br/>
            <!-- Message erreur -->
            <?php if(!empty($alert) || !empty($sucess)): ?>
                 <?php if(!empty($alert)): ?>
@@ -60,7 +59,9 @@
                     </div>
                 <?php endif; ?> 
             <?php endif; ?>
+        </form>
     </div>
     <script src="assets/js/edit_cars.js"></script>
 </div>
+
 <?php require_once  "footer.php" ?>

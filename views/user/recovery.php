@@ -1,4 +1,5 @@
 <?php  require_once "views/header_view.php"; ?>
+
 <div class="form_login">
         <h1>Récupération mot de passe</h1>
         <form action="" method="post" id="mdp">
@@ -15,8 +16,6 @@
                     </td>
                 </tr>
             </table>
-        </form>
-        <br/> 
             <!-- Message erreur -->
            <?php if(!empty($alert) || !empty($sucess)): ?>
                 <?php if(!empty($alert)): ?>
@@ -29,6 +28,8 @@
                     </div>
                 <?php endif; ?> 
             <?php endif; ?>
+        </form>
         <script src="assets/js/login.js"></script>
     </div> 
+    
 <?php require_once "views/user/footer.php"; ?>

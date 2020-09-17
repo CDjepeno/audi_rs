@@ -25,7 +25,6 @@
             <p><a href="index.php?class=users&action=recovery">Mot de passe oublié ?</a></p>
             <p>vous n'êtes pas encore membre ?<a href="index.php?class=users&action=register">Rejoignez-nous maintenant.</a></p>
         </form>
-        <br/> 
             <!-- Message d'alert -->
             <?php if(!empty($alert)): ?>
                 <?php if(!empty($alert)): ?>

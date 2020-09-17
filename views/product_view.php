@@ -1,4 +1,5 @@
 <?php require_once "header_view.php"; ?>
+
     <div class="container">
         <article id="product_only">
             <h2> Découvrez le <?= $product->getName() ?> </h2>
@@ -12,4 +13,5 @@
         </article>
     </div>
     <script src="assets/js/wishlist.js"></script>	
+    
 <?php require_once "footer_view.php"; ?>

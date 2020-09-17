@@ -22,8 +22,6 @@
                     </td>
                 </tr>
             </table>
-        </form>
-        <br/>
         <!-- Message d'alert -->
         <?php if(!empty($alert) || !empty($sucess)): ?>
             <?php if(!empty($alert)): ?>
@@ -36,6 +34,7 @@
                     </div>
                 <?php endif; ?> 
             <?php endif; ?>
+        </form>
     </div>
 
     <!-- Liste commentaire -->
