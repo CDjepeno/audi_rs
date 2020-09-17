@@ -34,6 +34,5 @@
 					<?php endforeach ?>
 				</nav>	
 			</section>
-
 		</header>
 		

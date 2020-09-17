@@ -3,7 +3,6 @@
     <div class="form_register">
         <form action="" method="post" id="register">
         <h1>Inscrivez vous afin de profiter de notre réseaux</h1>
-
         <table>
                 <tr>
                 <span id='erreur_register'></span>
@@ -43,8 +42,6 @@
                     </td>
                 </tr>
             </table>
-        </form>
-        <br/>
            <!-- Message erreur -->
            <?php if(!empty($alert) || !empty($sucess)): ?>
                 <?php if(!empty($alert)): ?>
@@ -57,6 +54,7 @@
                     </div>
                 <?php endif; ?> 
             <?php endif; ?>
+        </form>
         <script src="assets/js/register.js"></script>
     </div>
 
