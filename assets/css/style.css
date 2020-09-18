@@ -1,10 +1,12 @@
-/********** FONT FACE **********/
+/***** FONT FACE *****/
 @font-face {
 	font-family: "Amaranth";
 	src: url("../fonts/amaranth.otf");
 }
 
-/********** GLOBAL **********/
+/*************************************************/
+/********************* GLOBAL ********************/
+/*************************************************/
 html {
 	font-size: 62.5%
 }
@@ -14,8 +16,6 @@ html {
 	outline: none;
 	text-decoration: none;
 	transition: all .1s ease 0s;
-    /* Visualisation des éléments */
-	/*border: 1px dotted rgba(0,0,0,0.3);*/
 	margin: 0px;
 	padding: 0px;
 }
@@ -24,14 +24,17 @@ html {
 	transition: all .3s ease 0s;
 }
 
-
 body {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
     line-height: 1.6;
-	color: rgba(0,0,0,0.5);
-	
+	color: rgba(0,0,0,0.5);	
+	font-family: "Open Sans", Arial, sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #1C1F23;
+	font-size: 1.6rem;
 }
 
 a, a:hover, a:visited, a:active {
@@ -41,20 +44,6 @@ a, a:hover, a:visited, a:active {
 .container {
 	width: 60%;
 	margin: 0 auto;
-}
-
-
-/* BUTTON */
-.btn {
-	display: inline-block;
-}
-
-body {
-	font-family: "Open Sans", Arial, sans-serif;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #1C1F23;
-	font-size: 1.6rem;
 }
 
 img {
@@ -93,6 +82,7 @@ main h3 {
 
 .btn {
 	background-color: black;
+	display: inline-block;
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
@@ -114,7 +104,83 @@ p{
 	color:#D3CECA;
 }
 
-/**************** NAV **************/
+
+/***** DASHBORD *****/
+.fa {
+    font-size: 3rem;
+}
+
+.fa-circle {
+    font-size: 2rem;
+    color: green;
+}
+
+.user {
+    color: white;
+}
+
+
+
+#bar {
+    display: none;
+}
+
+.dashbord {
+    display: flex;
+}
+
+#description::placeholder {
+    color:  rgba(255, 255, 255, 0.404);
+}
+
+#title::placeholder {
+    color:  rgba(255, 255, 255, 0.404);
+}
+
+#price::placeholder {
+    color:  rgba(255, 255, 255, 0.404);
+}
+
+
+/***** FORMULAIRES *****/
+form span{
+	color: red;
+}
+
+#mail::placeholder{
+	color: rgba(255, 255, 255, 0.404);
+}
+
+#pseudo::placeholder{
+	color: rgba(255, 255, 255, 0.404);
+}
+
+#password::placeholder{
+	color: rgba(255, 255, 255, 0.404);
+}
+
+#textarea::placeholder{
+	color: rgba(255, 255, 255, 0.404);
+}
+
+.alert{
+	background-color: red;
+	text-align: center;
+	padding: 1rem;
+}
+
+.sucess{
+	background-color: green;
+	text-align: center;
+	padding: 1rem;
+}
+
+/***************************************************/
+/*********************** MAIN **********************/
+/***************************************************/
+
+
+/***** NAV *****/
 .form_register h2 {
 	margin-left: 1rem;
 }
@@ -139,7 +205,9 @@ p{
 	text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 	font-family: "Amaranth";
 }
-/**************** HEADER VISITEUR ***************/
+
+
+/***** HEADER VISITEUR *****/
 .header_visiteur a {
 	size:2rem;
 	font-family:"Amaranth";
@@ -188,17 +256,14 @@ p{
 	display: none;
 }
 
-
 header .fa {
 	color:white;
 	font-size: 3rem;
-	/* display: none; */
 }
 
 .header_visiteur h2:hover {
 	color:#EF232E;
 }
-
 
 .header_visiteur nav a:hover {
 	background-color: #EF232E;
@@ -206,41 +271,18 @@ header .fa {
 }
 
 
-
-/*************** HEADER_DASHBOARD ****************/
-.header_dashboard {
-	background-image: url('../img/header.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 45% 28%;
-	color: white;
-	padding:5rem;
-}
-
-.header_dashboard h2:hover {
-	color:red;
-}
-
-.header_dashboard nav a:hover {
-	background-color: red;
-	color: white;
-}
-
-
-/********** SLIDER **********/
+/***** SLIDER *****/
 #slider {
 	-webkit-backface-visibility: hidden;
 	text-align: center;
-	/* width: 120rem; */
 	margin-top: 25px;
 	border: 20px solid black;
 	margin: 20px auto;
 }
 
-.slides img {
+.main {
+	width: 100%;
 	height: 40rem;
-	padding: 1em;
-	padding: 1em;
 }
 
 .main {
@@ -257,16 +299,8 @@ header .fa {
 	top: 65%;
 }
 
-#next {
-	margin-left: 102rem;
-}
 
-#prew {
-	margin-left: 2rem;
-}
-
-/************ Nos services ************/
-
+/***** Nos services *****/
 #article article {
 	width: 30%;
 }
@@ -287,7 +321,7 @@ header .fa {
 }
 
 
-/************ Véhicule index ***********/
+/***** Véhicule index *****/
 #cars  {
 	display: flex;
 	flex-wrap: wrap;
@@ -333,7 +367,8 @@ header .fa {
 	vertical-align: middle;
 }
 
-/************ Véhicule catégory ***********/
+
+/***** Véhicule catégory *****/
 .container_cat {
 	display: flex;
 	flex-wrap: wrap;
@@ -351,7 +386,8 @@ header .fa {
 	color: white;
 }
 
-/************ Véhicule seul ***********/
+
+/***** Véhicule seul *****/
 #product_only {
 	border: 10px ridge goldenrod;
 	display: block;
@@ -368,7 +404,539 @@ header .fa {
 	color: goldenrod;
 }
 
-/********** FOOTER ***********/
+/*************************************************/
+/******************* DASHBOARD *******************/
+/*************************************************/
+
+/***** HEADER_DASHBOARD *****/
+.header_dashboard {
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 45% 28%;
+	color: white;
+	padding:5rem;
+}
+
+.header_dashboard h2:hover {
+	color:red;
+}
+
+.header_dashboard nav a:hover {
+	background-color: red;
+	color: white;
+}
+
+
+/***** ASIDE *****/
+.aside {
+    border-collapse: collapse;
+    background-color: black;
+    width: 20%;
+    height: 80vh;
+    padding-bottom: 5rem;
+}
+
+.aside thead tr td {
+    padding: 1rem;
+    border: none;
+}
+
+.aside tbody tr td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.aside tbody td:hover {
+    background-color: #1C1F23;
+}
+
+.aside img {
+    width: 40rem;
+}
+
+.aside .td {
+    height: 20rem;
+}
+
+.aside tfoot td {
+    padding-bottom: 10rem;
+}
+
+
+/********** MAIN DASHBORD ***********/
+
+/***** Acceuil *****/
+.main h1 {
+    margin-top: 1rem;
+}
+
+.main .perso {
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.main .perso th {
+    border: 1px solid red;
+    width:60rem;
+    padding: 1rem;
+}
+
+.main .perso td {
+    border: 1px solid red;
+    width:60rem;
+    padding: 1rem;
+}
+
+
+/***** véhicule en vente *****/
+.dashbord #product {
+    margin: 2rem;
+    width: 30%;
+    color:white;
+}
+
+
+/***** véhicule commandé *****/
+.main_c {
+    margin: 20px auto;
+}
+
+.main_c .commande {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+}
+
+.main_c .commande th {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem;
+}
+.main_c .commande a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.main_c .commande td {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem;
+} 
+
+
+/***** Détail véhicule commander *****/
+.main_d {
+    margin: 20px auto;
+}
+
+.main_d .detail {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+}
+
+.main_d .detail {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.main_d .detail th {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.main_d .detail td {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem;
+} 
+
+.detail tbody img {
+    width: 20rem;
+}
+
+
+/***** ajouter un véhicule *****/
+.form_addcars #add_cars {
+    margin: auto;
+}
+
+.form_addcars #add_cars  h1 {
+    font-size: 2rem;
+}
+
+.form_addcars {
+    margin: 6rem auto;
+	padding: 3rem 3rem;
+    width: 30%;
+    height: 70vh;
+	border-radius: 10px ;
+	background-color: rgba(255, 255, 255, 0.404);
+}
+
+.form_addcars table tr {
+    margin-bottom:10rem;
+}
+
+#add_cars table {
+    width: 100%;
+}
+
+#add_cars .title,.content,.price {
+    width: 100%;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 8px 0;
+	margin: 4rem 3rem;
+    border-bottom: 1px solid red;  
+}
+
+#add_cars .submit {
+    text-align: center;
+}
+
+.title input {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+	color: white;
+}
+
+.content textarea {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+    color: white;
+    width: 100%;
+}
+
+.price input {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+    color: white;
+}
+
+.category {
+    position: relative;
+    font-family: Arial;
+}
+
+.category #cat {
+    background: none;
+    margin: 1rem;
+    width: 90%;
+    padding: 1rem;
+}
+
+#add_cars button {
+	width: 100%;
+	background: none;
+	border: 2px solid red;
+	color: white;
+	padding: 1rem;
+	margin: 1rem auto;
+	cursor: pointer;
+}
+
+#name_addcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#description_addcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#price_addcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+
+
+/***** modifier un véhicule *****/
+.form_editcars {
+    margin: 6rem auto;
+	padding: 3rem 3rem;
+    width: 30%;
+    height: 70vh;
+	border-radius: 10px ;
+    background-color: rgba(255, 255, 255, 0.404);
+    margin: auto;
+}
+.form_editcars h1 {
+    font-size: 2rem;
+}
+#edit_cars table {
+    width: 100%;
+}
+#edit_cars .title,.content,.price {
+    width: 100%;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 8px 0;
+	margin: 4rem 3rem;
+    border-bottom: 1px solid red;  
+}
+#edit_cars button {
+	width: 100%;
+	background: none;
+	border: 2px solid red;
+	color: white;
+	padding: 1rem;
+	margin: 1rem auto;
+	cursor: pointer;
+}
+#name_editcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#description_editcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#price_editcars::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+
+
+/*************************************************/
+/********************* CONTACT *******************/
+/*************************************************/
+
+.background_contact{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/paris-nuit_4.jpg');
+	background-repeat: no-repeat;
+	background-position: 55% 65%;;
+	background-size: cover;
+	padding: 10px;
+}
+
+.form_contact{
+	margin: 20px auto;
+	padding: 30px 30px;
+	width: 30%;
+	border-radius: 10px ;
+	background-color: rgba(255, 255, 255, 0.404);
+}
+
+.form_contact #contact table {
+	text-align: center;
+	margin: auto;
+}
+
+h1{
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0px;
+}
+
+.contact .mail,.message{
+	width: 100%;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 8px 0;
+	margin: 8px 30px;
+	border-bottom: 1px solid red;
+}
+.form_contact input {
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+	color: black;
+	width:100%;
+}
+ 
+.message textarea{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+	color: white;
+	width: 100%;
+} 
+
+.contact button{
+	width: 100%;
+	background: none;
+	border: 2px solid red;
+	color: white;
+	padding: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.liste_commentaire{
+	color: black;
+	border: 1px solid white;
+	margin:  auto;
+	border-collapse: collapse;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.liste_commentaire th{
+	background-color: rgba(255, 0, 0, 0.2);
+	border: 1px solid white;
+}
+
+.liste_commentaire td{
+	border: 1px solid white;
+	width: 200px;
+}
+
+.liste_commentaire .message{
+	width: 500px;
+}
+
+#mail_contact::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#textarea_contact::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+
+
+/**************************************************/
+/********************* REGISTER *******************/
+/**************************************************/
+.form_register{
+	margin: 20px auto;
+	padding: 30px 30px;
+	width: 35%;
+	border-radius: 10px ;
+	background-color: rgba(255, 255, 255, 0.404);
+}
+
+.form_register h3{
+	text-align: center;
+}
+
+.form_register input{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+	color: black;
+	width:100%;
+}
+
+.form_register #register table {
+	text-align: center;
+	margin: auto;
+}
+
+.form_register .mail,.password,.pseudo{
+	color: white;
+	width: 100%;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 8px 0;
+	margin: 8px 10px;
+	border-bottom: 1px solid red;
+}
+
+.form_register button{
+	width: 100%;
+	background: none;
+	border: 2px solid red;
+	color: white;
+	padding: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.form_register p{
+	font-size: 1.6rem;
+	text-align: center;
+}
+#mail_register::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#pseudo_register::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#password1_register::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#password2_register::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+
+/*************************************************/
+/********************* LOGIN *********************/
+/*************************************************/
+.form_login{
+	margin: 7rem auto;
+	padding: 30px 30px;
+	width: 35%;
+	border-radius: 10px ;
+	background-color: rgba(0, 0, 0, 0.404);
+	text-align: center;
+}
+
+.form_login table{
+	margin: auto;
+}
+
+.form_login .email,.password{
+	width: 100%;
+	color: white;
+	display: flex;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid red;
+}
+
+.form_login input{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+	color: white;
+	width:100%;
+}
+
+.form_login button{
+	width: 100%;
+	background: none;
+	border: 2px solid red;
+	color: white;
+	padding: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.form_login a{
+	text-decoration: underline;
+}
+
+.form_login{
+	text-align: center;
+}
+
+#mail_login::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+#password_login::placeholder {
+	color: rgba(255, 255, 255, 0.404);
+}
+
+
+/*************************************************/
+/********************* FOOTER ********************/
+/*************************************************/
 
 footer {
 	width: 100%;
@@ -394,11 +962,12 @@ footer h2:hover {
 	transform: scale(1.1);
 }
 
+/*************************************************/
+/******************* RESPONSIVE ******************/
+/*************************************************/
 
-/************** Responsive *************** /
-
-
-/********************mobile 480px***********************/
+/*************** MAIN ***************/
+/***** mobile 480px *****/
 @media screen and (max-width:480px){
 	#slider {
 		display: none;
@@ -475,9 +1044,7 @@ footer h2:hover {
 	}
 }
 
-
-
-/*****************tablette 481px - 960px**********************/
+/***** tablette 481px - 960px *****/
 @media screen and (min-width:481px) and (max-width:960px){
 	.header_visiteur {
 		max-width: 100%;
@@ -518,3 +1085,118 @@ footer h2:hover {
 		width:50rem;
 	}
 }
+
+/*************** DASHBORD ***************/
+/***** mobile 480px *****/
+@media screen and (max-width:480px) {
+    #bar {
+        display: block;
+        width: 100%;
+    }
+    .aside {
+        position : fixed;
+        width: 100%;
+        display: none;
+        transition: all 1s ease-out;
+    }
+    .aside td {
+        width: 100%;
+    }
+    .aside img {
+        width: 100%;
+    }
+    .aside.open {
+        display: block;
+        position : fixed;
+        height: 100vh;
+        z-index: 1;
+        width: 100%;
+    }
+    .main_c .commande {
+        width: 60%;
+        font-size: 1.3rem;
+    }
+    .main_d .detail {
+        width: 60%;
+        font-size: 1.3rem;
+    }
+    .dashbord #cars {
+        width: 80%;
+        margin: auto;
+    }
+    .dashbord #product {
+        width: 80%;
+    }
+    .form_addcars {
+        width: 80%;
+        height: 70vh;
+    }
+    .form_editcars {
+        width: 80%;
+        height: 70vh;
+    }
+    #edit_cars h1 {
+          font-size: 2rem;
+    }
+    #add_cars h1 {
+          font-size: 2rem;
+    }
+}
+
+/***** tablette 481px - 960px *****/
+@media screen and (min-width:481px) and (max-width:960px) {
+    .dashbord #cars {
+		display: flex;
+		width: 100%;
+    }
+    .main_c .commande {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    .main_add #add_cars {
+        margin: auto;
+    }
+    .form_addcars {
+        width: 60%;
+        height: 70vh;
+    }
+    .form_editcars {
+        width: 60%;
+        height: 70vh;
+    }
+    #edit_cars h1 {
+        font-size: 2rem;
+    }
+    #add_cars h1 {
+        font-size: 2rem;
+    }
+}
+
+/*************** FORM ***************/
+/***** mobile 480px *****/
+@media screen and (max-width:480px) {
+	.form_login {
+		width: 80%;
+	}
+	.form_register {
+		width: 80%;
+	}
+	.form_contact {
+		width: 80%;
+	}
+}
+
+/***** tablette 481px - 960px *****/
+@media screen and (min-width:481px) and (max-width:960px){
+	.form_login {
+		width: 60%;
+	}
+	.form_register {
+		width: 60%;
+	}
+	.form_contact {
+		width: 50%;
+	}
+}
+
+

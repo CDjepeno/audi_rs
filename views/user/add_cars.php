@@ -1,4 +1,5 @@
 <?php require_once  "header_dashbord.php" ?>
+
 <div id="bar">
     <i class="fa fa-bars"></i>
 </div>
@@ -62,4 +63,5 @@
     </div>
     <script src="assets/js/add_cars.js"></script>
 </div>
+
 <?php require_once  "footer.php" ?>

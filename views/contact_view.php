@@ -3,7 +3,7 @@
 <div class="background_contact">
     <div class="form_contact">
         <h1>Contactez-nous</h1>
-        <form action=" " method="post" class="contact" id="contact">
+        <form action="" method="post" class="contact" id="contact">
             <table>
                 <tr>
                     <span id='erreur_contact'></span>
