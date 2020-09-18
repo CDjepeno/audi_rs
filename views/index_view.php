@@ -1,4 +1,5 @@
 <?php require_once "header_view.php"; ?>
+
 <!--MAIN CONTENT-->
 <main class="container">
     <!-- Slider -->
