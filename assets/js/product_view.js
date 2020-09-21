@@ -1,10 +1,8 @@
-"use strict";
+"Use strict"
 
-
-/********** pop-up confirmation supprimer et commande ********/
+/********** pop-up confirmation favoris et commande ********/
 let commande = document.getElementById('commande');
-let supprimer = document.getElementById('supprimer');
-
+let favoris = document.getElementById('favoris');
 
 commande.addEventListener("click", function(e){
     e.preventDefault();
@@ -13,11 +11,9 @@ commande.addEventListener("click", function(e){
     }
 })
 
-supprimer.addEventListener("click", function(e){
+favoris.addEventListener("click", function(e){
     e.preventDefault();
-    if(confirm('êtes vous sûr de vouloir supprimer ce véhicule de vos favoris ?')) {
+    if(confirm('êtes vous sûr de vouloir ajouter ce véhicule de vos favoris ?')) {
         window.location = this.href;
     }
 })
-
-

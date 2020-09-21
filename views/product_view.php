@@ -7,11 +7,11 @@
                 <h3>Prix : <?= $product->getBuy_price()?> € HT</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <?php if(isset($_SESSION['user']['logged'])): ?>
-                    <a class="btn" onclick="return confirm('êtes vous sûr de vouloir ajouter ce véhicule au favoris ?');" href="index.php?class=product&action=wishlist&id=<?= $product->getId() ?>">ajouter au favoris</a>
-                    <a class="btn" onclick="return confirm('êtes vous sûr de vouloir commander ce véhicule ?');" href="index.php?class=Order&action=addcommande&id=<?= $product->getId()?>">Commander</a>
+                    <a class="btn" id="favoris"  href="index.php?class=product&action=wishlist&id=<?= $product->getId() ?>">ajouter au favoris</a>
+                    <a class="btn" id="commande" href="index.php?class=Order&action=addcommande&id=<?= $product->getId()?>">Commander</a>
                 <?php endif; ?>
         </article>
     </div>
-    <script src="assets/js/wishlist.js"></script>	
+    <script src="assets/js/product_view.js"></script>	
     
 <?php require_once "footer_view.php"; ?>
