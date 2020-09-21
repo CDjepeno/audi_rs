@@ -183,6 +183,7 @@ class ProductController extends AbstractController
      */
     public function wishlist()
     {
+
         $wishlist=[];
 
         if(!isset($_SESSION["favoris"]))
@@ -215,7 +216,6 @@ class ProductController extends AbstractController
               $this->renderView('user/wishlist_view',[
             "wishlist" => $wishlist,
         ]);
-       
     }
 
     
@@ -250,5 +250,3 @@ class ProductController extends AbstractController
     }
     
 }
-
-

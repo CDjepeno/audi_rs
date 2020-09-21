@@ -282,7 +282,7 @@ header .fa {
 
 .main {
 	width: 100%;
-	height: 40rem;
+	height: 60rem;
 }
 
 .main {
@@ -430,6 +430,7 @@ header .fa {
 
 /***** ASIDE *****/
 .aside {
+	display: block;
     border-collapse: collapse;
     background-color: black;
     width: 20%;
@@ -578,7 +579,7 @@ header .fa {
     margin: 6rem auto;
 	padding: 3rem 3rem;
     width: 30%;
-    height: 70vh;
+    height: 45vh;
 	border-radius: 10px ;
 	background-color: rgba(255, 255, 255, 0.404);
 }
@@ -661,13 +662,16 @@ header .fa {
 	color: rgba(255, 255, 255, 0.404);
 }
 
+/***** whislist *****/
+
+
 
 /***** modifier un véhicule *****/
 .form_editcars {
     margin: 6rem auto;
 	padding: 3rem 3rem;
     width: 30%;
-    height: 70vh;
+    height: 45vh;
 	border-radius: 10px ;
     background-color: rgba(255, 255, 255, 0.404);
     margin: auto;

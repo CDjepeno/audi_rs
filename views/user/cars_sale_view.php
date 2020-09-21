@@ -19,12 +19,13 @@
                     <section class="description">
                         <h2><?= $product->getbuy_price() ?> €</h2>
                     </section>
-                    <a class="btn" href="index.php?class=Product&action=edit&id=<?= $product->getId()?>">Modifier ce véhicule</a>
-                    <a class="btn" onclick="return confirm('êtes vous sûr de vouloir supprimer ce véhicule?');" href="index.php?class=Product&action=delete&id=<?= $product->getId()?>">Supprimer ce véhicule</a>
+                    <a class="btn" id="modifier" href="index.php?class=Product&action=edit&id=<?= $product->getId()?>">Modifier ce véhicule</a>
+                    <a class="btn" id="supprimer" href="index.php?class=Product&action=delete&id=<?= $product->getId()?>">Supprimer ce véhicule</a>
                 </article>
             <?php endforeach ?> 
         </section>
     </div>
 </div>
+<script src="assets/js/cars_sale_view.js"></script>	
 
 <?php require_once "footer.php" ?>

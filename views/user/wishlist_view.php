@@ -19,13 +19,15 @@
                 <section class="description">
                     <h2><?= $w[0]->getBuy_price() ?> €</h2>
                 </section>
-                <a class="btn" onclick="return confirm('êtes vous sûr de vouloir supprimer ce véhicule??');" href="index.php?class=Product&action=remove_wishlist&id=<?= $w[0]->getId()?>">Supprimer de vos favoris</a>
-                <a class="btn" onclick="return confirm('êtes vous sûr de vouloir commander ce véhicule??');" href="index.php?class=Order&action=addcommande&id=<?= $w[0]->getId()?>">Commander ce véhicule</a>
+                <a class="btn" id="supprimer" href="index.php?class=Product&action=remove_wishlist&id=<?= $w[0]->getId()?>">Supprimer de vos favoris</a>
+                <a class="btn" id="commande" href="index.php?class=Order&action=addcommande&id=<?= $w[0]->getId()?>">Commander ce véhicule</a>
             </article>
         <?php endforeach ?> 
     </section>
     </div>
 </div> 
+<script src="assets/js/wishlist.js"></script>	
+
 
 <?php require_once "footer.php" ?>
 
