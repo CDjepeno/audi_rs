@@ -2,7 +2,7 @@
 
 <div id="bar">
     <i class="fa fa-bars"></i>
-</div>
+</div> 
 <div class="dashbord">
     <?php require_once "aside.php" ?>
     <div class="main">
