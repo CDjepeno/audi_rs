@@ -162,7 +162,7 @@ class Order
     /**
      * Récupération des commandes d'un seul utilisateur
      * 
-     * @param int $id_user
+     * @param int $id
      * @return array
      */
     public static function getByUser(int $id):array 
