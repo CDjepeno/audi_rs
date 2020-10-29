@@ -29,7 +29,6 @@
         <?php foreach ($products as $product): ?> 
             <article id="product">
                 <h2><?= $product->getName() ?></h2>
-
                 <section class="img">
                     <a href="index.php?class=Product&action=show&id=<?= $product->getId()?>">
                     <img src="assets/img/upload/<?= htmlspecialchars ($product->getpath()) ?>" alt="Audi" />
