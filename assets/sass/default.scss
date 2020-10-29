@@ -1,5 +1,13 @@
 /****** Variables ******/
 // couleur:gold|red|background-color-body|place holder-color
+$gold : goldenrod;
+$background : #1C1F23;
+$background-form : rgba(255, 255, 255, 0.404);
+$btn-color : red;
+$hover-btn-color : red;
+$place-holder-color : rgba(255, 255, 255, 0.404);
+$color-th : blue;
+$color-td : blue;
 
 
 
@@ -7,6 +15,156 @@
 /******** Mixins ********/
 // #product avc dash_véhicule_vente|.img img:hover|.container|#product avc prod_cat|container dash|form_ajout véhicule et modifier véhicule
 // hover bouton| style bouton |header_nav et header_menber|header_dash et header visiteur|form_contact|transition hover btn rs|
+@mixin container() {
+    width: 60%;
+	margin: 0 auto;
+}
+
+@mixin form($color,$width,$margin) {
+    margin: $margin auto;
+	padding: 30px 30px;
+	width: $width;
+	border-radius: 10px ;
+    background-color: $color;
+    text-align: center;
+}
+
+@mixin form-label($margin-y,$margin-x) {
+    width: 100%;
+    color:white;
+    display:flex;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 8px 0;
+	margin: 4rem 3rem;
+    border-bottom: 1px solid red; 
+}
+
+@mixin div-products($width) {
+    border: 10px solid black;
+	display: block;
+	margin-bottom: 2rem;
+	text-align: center;
+	width:$width;
+}
+
+@mixin table() {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+    color: white;
+}
+
+@mixin main_dashbord() {
+    margin: 20px auto;
+	width: 80%;
+}
+
+
+
+@mixin nav($direction) {
+    display: flex;
+    flex-direction: $direction;
+    padding: 2.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -73px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+/******** blocks ********/
+%div-cars {
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+}
+
+%image-style {
+    margin: 0 10px;
+	width:100%;
+	text-align:center;
+	display: block;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+%hover-img {
+    -webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+%description {
+    text-align: center;
+	margin: auto;
+	width:100%;
+}
+
+%title-cars {
+    vertical-align: middle;
+}
+
+
+
+%table-th {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem; 
+}
+
+%table-td {
+    border: 1px solid blue;
+    width: 20rem;
+    padding: 1rem;
+}
+
+%form-dasbord {
+    margin: 6rem auto;
+	padding: 3rem 3rem;
+    width: 30%;
+    height: 45vh;
+	border-radius: 10px ;
+    background-color: rgba(255, 255, 255, 0.404);
+    margin: auto;
+}
+
+%form-button {
+    width: 100%;
+	background: none;
+	border: 2px solid red;
+	color: white;
+	padding: 1rem;
+	margin: 1rem auto;
+	cursor: pointer;
+}
+
+%form-input {
+    border: none;
+	outline: none;
+	background: none;
+	font-size: 2rem;
+	color: white;
+	width:100%;
+}
+
+%header {
+    max-width: 100%;
+    background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-position: 45% 28%;
+	background-size: cover;
+	color: white;
+    padding:5rem;
+    margin: auto;
+}
+
+
+
+
 
 
 /*************************************************/
