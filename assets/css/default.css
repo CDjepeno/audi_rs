@@ -26,12 +26,12 @@
   transform: scale(0.9);
 }
 
-footer img:hover, .header_visiteur .member img:hover {
+footer img:hover, .header_dashboard .member img:hover, .header_visiteur .member img:hover {
   -webkit-transform: scale(1);
   transform: scale(1.1);
 }
 
-.form_login button, .form_register button {
+.form_login button, .form_register button, .contact button, .form_dashboard button {
   background: none;
   width: 100%;
   border: 2px solid red;
@@ -40,11 +40,11 @@ footer img:hover, .header_visiteur .member img:hover {
   margin: 1rem auto;
   cursor: pointer;
 }
-.form_login button:hover, .form_register button:hover {
+.form_login button:hover, .form_register button:hover, .contact button:hover, .form_dashboard button:hover {
   background-color: black;
 }
 
-.form_login input, .form_register input {
+.form_login input, .form_register input, .contact input, .form_editcars input, .form_dashboard input {
   background: none;
   border: none;
   outline: none;
@@ -53,7 +53,7 @@ footer img:hover, .header_visiteur .member img:hover {
   width: 100%;
 }
 
-.form_login .email, .form_login .password, .form_register .mail, .form_register .password, .form_register .pseudo {
+.form_login .email, .form_login .password, .form_register .mail, .form_register .password, .form_register .pseudo, .contact .mail, .contact .message, .form_dashboard .content, .form_dashboard .price, .form_dashboard .title {
   width: 100%;
   color: white;
   display: flex;
@@ -64,7 +64,7 @@ footer img:hover, .header_visiteur .member img:hover {
   border-bottom: 1px solid red;
 }
 
-.header_visiteur {
+.header_dashboard, .header_visiteur {
   background-position: 45% 28%;
   background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
@@ -74,12 +74,12 @@ footer img:hover, .header_visiteur .member img:hover {
   color: white;
   margin: auto;
 }
-.header_visiteur .nav {
+.header_dashboard .nav, .header_visiteur .nav {
   justify-content: space-around;
   display: flex;
   align-items: baseline;
 }
-.header_visiteur .nav nav {
+.header_dashboard .nav nav, .header_visiteur .nav nav {
   justify-content: flex-end;
   text-transform: uppercase;
   flex-direction: row;
@@ -90,18 +90,18 @@ footer img:hover, .header_visiteur .member img:hover {
   text-align: center;
   margin: 10px;
 }
-.header_visiteur .nav nav a {
+.header_dashboard .nav nav a, .header_visiteur .nav nav a {
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
   font-family: "Amaranth";
   color: white;
   padding: 1rem 1.5rem;
   size: 2rem;
 }
-.header_visiteur .nav nav a:hover {
+.header_dashboard .nav nav a:hover, .header_visiteur .nav nav a:hover {
   background-color: red;
   color: white;
 }
-.header_visiteur .member {
+.header_dashboard .member, .header_visiteur .member {
   -webkit-box-align: center;
   justify-content: space-between;
   -webkit-box-pack: justify;
@@ -114,19 +114,19 @@ footer img:hover, .header_visiteur .member img:hover {
   display: -ms-flexbox;
   display: flex;
 }
-.header_visiteur .member img {
+.header_dashboard .member img, .header_visiteur .member img {
   margin-left: 4rem;
   width: 9rem;
 }
-.header_visiteur .nav .member h2:hover {
+.header_dashboard .nav .member h2:hover, .header_visiteur .nav .member h2:hover {
   color: red;
 }
 
-footer h2:hover, #cars #product .btn:hover {
+footer h2:hover, #product_only .btn:hover, #cars #product .btn:hover {
   color: red;
 }
 
-#cars #product .btn {
+#product_only .btn, #cars #product .btn {
   background-color: black;
   text-transform: uppercase;
   display: inline-block;
@@ -136,6 +136,24 @@ footer h2:hover, #cars #product .btn:hover {
   margin: 1rem 0;
   text-align: center;
 }
+.main_d, .main_c {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.main_d .detail, .main_c .commande {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 50px auto;
+  color: white;
+}
+.main_d .detail th, .main_c .commande th, .main_d .detail td, .main_c .commande td {
+  border: 1px solid blue;
+  width: 20rem;
+  padding: 1rem;
+}
+
 /*************************************************/
 /********************* GLOBAL ********************/
 /*************************************************/
@@ -183,7 +201,7 @@ a, a:hover, a:visited, a:active {
   margin: 0 auto;
 }
 
-h2 {
+h1, h2 {
   color: white;
 }
 
@@ -241,23 +259,172 @@ h2 {
   text-transform: uppercase;
   color: goldenrod;
 }
-
 /*************************************************/
 /******************* DASHBOARD *******************/
 /*************************************************/
 /***** HEADER_DASHBOARD *****/
 /***** ASIDE *****/
+.aside {
+  display: block;
+  border-collapse: collapse;
+  background-color: black;
+  width: 20%;
+  height: 80vh;
+  padding-bottom: 5rem;
+}
+.aside thead tr td {
+  padding: 1rem;
+  border: none;
+}
+.aside tfoot td {
+  padding-bottom: 10rem;
+}
+.aside tbody tr td {
+  text-align: center;
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
 /********** MAIN DASHBORD ***********/
-/***** Acceuil *****/
-/***** véhicule en vente *****/
+#bar {
+  display: none;
+}
+
+.dashbord {
+  display: flex;
+}
+.dashbord .main {
+  width: 80%;
+}
+.dashbord .main h1 {
+  margin-top: 1rem;
+  text-align: center;
+}
+.dashbord .main .perso {
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+  margin: 50px auto;
+}
+.dashbord .main .perso th {
+  border: 1px solid red;
+  width: 60rem;
+  padding: 1rem;
+}
+.dashbord .main .perso td {
+  border: 1px solid red;
+  width: 60rem;
+  padding: 1rem;
+}
+
 /***** véhicule commandé *****/
+.main_c .commande a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /***** Détail véhicule commander *****/
+.main_d .detail img {
+  width: 20rem;
+}
+
+/***** véhicule en vente / modifier un véhicule*****/
+.main #cars #product {
+  margin-bottom: 2rem;
+  text-align: center;
+  border: 10px solid black;
+  display: block;
+  width: 25%;
+}
+
 /***** ajouter un véhicule *****/
-/***** whislist *****/
+.form_dashboard {
+  background-color: rgba(255, 255, 255, 0.404);
+  border-radius: 10px;
+  margin: 7rem auto;
+  width: 35%;
+  padding: 30px 30px;
+  text-align: center;
+  height: 50vh;
+}
+.form_dashboard table {
+  margin: auto;
+}
+.form_dashboard td {
+  margin-bottom: 5rem;
+}
+.form_dashboard textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+}
+.form_dashboard #name_addcars::placeholder, .form_dashboard #description_addcars::placeholder, .form_dashboard #price_addcars::placeholder {
+  color: rgba(255, 255, 255, 0.404);
+}
+.form_dashboard #name_editcars::placeholder, .form_dashboard #description_editcars::placeholder, .form_dashboard #price_editcars::placeholder {
+  color: rgba(255, 255, 255, 0.404);
+}
 /***** modifier un véhicule *****/
+.form_editcars {
+  background-color: rgba(255, 255, 255, 0.404);
+  border-radius: 10px;
+  margin: 7rem auto;
+  width: 35%;
+  padding: 30px 30px;
+  text-align: center;
+  height: 50vh;
+}
+.form_editcars table {
+  margin: auto;
+}
 /*************************************************/
 /********************* CONTACT *******************/
 /*************************************************/
+.contact {
+  background-color: rgba(0, 0, 0, 0.404);
+  border-radius: 10px;
+  margin: 7rem auto;
+  width: 60%;
+  padding: 30px 30px;
+  text-align: center;
+}
+.contact table {
+  margin: auto;
+}
+.contact .mail textarea, .contact .message textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+}
+.contact table {
+  margin: auto;
+}
+.liste_commentaire {
+  color: black;
+  border: 1px solid white;
+  margin: 4rem auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.liste_commentaire th {
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 1px solid white;
+}
+.liste_commentaire td {
+  border: 1px solid white;
+  width: 200px;
+}
+.liste_commentaire .message {
+  width: 50rem;
+}
+
 /**************************************************/
 /********************* REGISTER *******************/
 /**************************************************/
@@ -269,8 +436,8 @@ h2 {
   padding: 30px 30px;
   text-align: center;
 }
-.form_register h1 {
-  color: white;
+.form_register table {
+  margin: auto;
 }
 .form_register table {
   margin: auto;
@@ -289,11 +456,11 @@ h2 {
   padding: 30px 30px;
   text-align: center;
 }
-.form_login h1 {
-  color: white;
-}
 .form_login table {
   margin: auto;
+}
+.form_login h1 {
+  color: white;
 }
 /*************************************************/
 /********************* FOOTER ********************/

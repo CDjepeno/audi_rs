@@ -517,11 +517,12 @@ header .fa {
 	border: 1px solid blue;
     width: 20rem;
     padding: 1rem;
-} 
-					.main_c .commande a {
-						text-decoration: underline;
-						cursor: pointer;
-					}
+}
+ 
+.main_c .commande a {
+	text-decoration: underline;
+	cursor: pointer;
+}
 
 
 /***** Détail véhicule commander *****/
