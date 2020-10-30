@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="assets/css/flexslider.css">
 		<!-- CSS Perso -->
 		<link rel="stylesheet" href="assets/css/normalize.css">
-		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/default.css">
 	</head>
 	<body>
 		<!---------- HEADER ---------->

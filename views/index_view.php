@@ -6,6 +6,7 @@
     <figure id="slider">
         <img src="assets/img/slider/441.jpg" alt="Audi" class="main"/>
     </figure>
+    <!-- Services -->
     <section id="article">
         <article>
             <i class="fa fa-angle-double-up"></i>
