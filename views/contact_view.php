@@ -1,9 +1,9 @@
 <?php require_once "views/header_view.php"; ?>
 
-<div class="background_contact">
-    <div class="form_contact">
-        <h1>Contactez-nous</h1>
+<div class="container">
+    <div class="main_contact">
         <form action="" method="post" class="contact" id="contact">
+            <h1>Contactez-nous</h1>
             <table>
                 <tr>
                     <span id='erreur_contact'></span>

@@ -5,7 +5,7 @@
 </div>
 <div class="dashbord">
         <?php require_once "aside.php" ?>
-    <div class="form_addcars">
+    <div class="form_dashboard">
         <form action="" method="post" class="add" enctype="multipart/form-data" id="add_cars">
             <h1>Ajouter un véhicule</h1>
             <table>

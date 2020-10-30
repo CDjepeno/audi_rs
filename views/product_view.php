@@ -1,5 +1,4 @@
 <?php require_once "header_view.php"; ?>
-
     <div class="container">
         <article id="product_only">
             <h2> Découvrez le <?= $product->getName() ?> </h2>
