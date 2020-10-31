@@ -5,69 +5,65 @@
 
 /***** ASIDE *****/
 .aside {
-	display: block;
-    border-collapse: collapse;
-    background-color: black;
-    width: 20%;
-    height: 80vh;
-    padding-bottom: 5rem;
+    background-color : black;
+    border-collapse  : collapse;
+	display          : block;
+    width            : 20%;
+    height           : 80vh;
+    padding-bottom   : 5rem;
 
     thead tr td {
-        padding: 1rem;
-        border: none;
+        padding : 1rem;
+        border  : none;
     }
 
     tfoot td {
-        padding-bottom: 10rem;
+        padding-bottom : 10rem;
     }
 
     tbody tr td {
-        text-align: center;
-        border: 1px solid black;
-        padding: 1rem;
-        font-size: 2rem;
+        text-align : center;
+        font-size  : 2rem;
+        padding    : 1rem;
+        border     : 1px solid black;
     }
 }
 
 /********** MAIN DASHBORD ***********/
 #bar {
-    display: none;
+    display : none;
 }
 
 .dashbord {
-    display: flex;
+    display : flex;
 
     .main {
-        width: 80%;
-        // margin: auto;
-        // text-align: center;
+        width : 80%;
+        
         h1 {
-            margin-top: 1rem;
-            text-align: center;
+            margin-top : 1rem;
+            text-align : center;
         }
         .perso {
-            border-collapse: collapse;
-            width: 80%;
-            text-align: center;
-            margin: 50px auto;
+            border-collapse : collapse;
+            text-align      : center;
+            width           : 80%;
+            margin          : 50px auto;
     
             th {
-                border: 1px solid red;
-                width:60rem;
-                padding: 1rem;
+                padding : 1rem;
+                border  : 1px solid red;
+                width   :60rem;
             }
     
             td {
-                border: 1px solid red;
-                width:60rem;
-                padding: 1rem;
+                padding : 1rem;
+                border  : 1px solid red;
+                width   :60rem;
             }
         }
     }
 }
-
-
-
 
 /***** véhicule commandé *****/
 .main_c {
@@ -77,8 +73,8 @@
         @extend %table-dasboard;
 
         a {
-            text-decoration: underline;
-            cursor: pointer;
+            text-decoration : underline;
+            cursor          : pointer;
         }
     }
 }
@@ -90,7 +86,7 @@
         @extend %table-dasboard;
 
         img {
-            width: 20rem;
+            width : 20rem;
         }     
     }
 }
@@ -104,35 +100,35 @@
 /***** ajouter un véhicule *****/
 .form_dashboard {
     @include form($background-form,35%,7rem);
-    height: 50vh;
+    height : 50vh;
 
     .content,.price,.title {
         @extend %form-style-td;
     }
 
     td {
-        margin-bottom: 5rem;
+        margin-bottom : 5rem;
     }
 
     textarea{
-        border: none;
-        outline: none;
-        background: none;
-        font-size: 2rem;
-        color: white;
-        width: 100%;
+        background : none;
+        border     : none;
+        outline    : none;
+        font-size  : 2rem;
+        color      : white;
+        width      : 100%;
     } 
 
     #name_addcars,#description_addcars,#price_addcars {
 
         &::placeholder{
-            color: $background-form;
+            color : $background-form;
         } 
     }
     #name_editcars,#description_editcars,#price_editcars {
 
         &::placeholder{
-            color: $background-form;
+            color : $background-form;
         } 
     }
 
@@ -149,3 +145,5 @@
 
 
 }
+
+
