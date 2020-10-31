@@ -54,6 +54,7 @@ footer img:hover, .header_dashboard .member img:hover, .header_visiteur .member 
 }
 
 .form_login .email, .form_login .password, .form_register .mail, .form_register .password, .form_register .pseudo, .contact .mail, .contact .message, .form_dashboard .content, .form_dashboard .price, .form_dashboard .title {
+  border-bottom: 1px solid red;
   width: 100%;
   color: white;
   display: flex;
@@ -61,7 +62,6 @@ footer img:hover, .header_dashboard .member img:hover, .header_visiteur .member 
   font-size: 2rem;
   padding: 8px 0;
   margin: 8px 0;
-  border-bottom: 1px solid red;
 }
 
 .header_dashboard, .header_visiteur {
@@ -137,9 +137,9 @@ footer h2:hover, #product_only .btn:hover, #cars #product .btn:hover {
   text-align: center;
 }
 .main_d, .main_c {
+  text-align: center;
   margin: 20px auto;
   width: 80%;
-  text-align: center;
 }
 
 .main_d .detail, .main_c .commande {
@@ -149,9 +149,9 @@ footer h2:hover, #product_only .btn:hover, #cars #product .btn:hover {
   color: white;
 }
 .main_d .detail th, .main_c .commande th, .main_d .detail td, .main_c .commande td {
+  padding: 1rem;
   border: 1px solid blue;
   width: 20rem;
-  padding: 1rem;
 }
 
 /*************************************************/
@@ -205,8 +205,6 @@ h1, h2 {
   color: white;
 }
 
-/***** DASHBORD *****/
-/***** FORMULAIRES *****/
 /***************************************************/
 /*********************** MAIN **********************/
 /***************************************************/
@@ -265,9 +263,9 @@ h1, h2 {
 /***** HEADER_DASHBOARD *****/
 /***** ASIDE *****/
 .aside {
-  display: block;
-  border-collapse: collapse;
   background-color: black;
+  border-collapse: collapse;
+  display: block;
   width: 20%;
   height: 80vh;
   padding-bottom: 5rem;
@@ -281,9 +279,9 @@ h1, h2 {
 }
 .aside tbody tr td {
   text-align: center;
-  border: 1px solid black;
-  padding: 1rem;
   font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid black;
 }
 
 /********** MAIN DASHBORD ***********/
@@ -303,19 +301,19 @@ h1, h2 {
 }
 .dashbord .main .perso {
   border-collapse: collapse;
-  width: 80%;
   text-align: center;
+  width: 80%;
   margin: 50px auto;
 }
 .dashbord .main .perso th {
+  padding: 1rem;
   border: 1px solid red;
   width: 60rem;
-  padding: 1rem;
 }
 .dashbord .main .perso td {
+  padding: 1rem;
   border: 1px solid red;
   width: 60rem;
-  padding: 1rem;
 }
 
 /***** véhicule commandé *****/
@@ -355,9 +353,9 @@ h1, h2 {
   margin-bottom: 5rem;
 }
 .form_dashboard textarea {
+  background: none;
   border: none;
   outline: none;
-  background: none;
   font-size: 2rem;
   color: white;
   width: 100%;
@@ -396,9 +394,9 @@ h1, h2 {
   margin: auto;
 }
 .contact .mail textarea, .contact .message textarea {
+  background: none;
   border: none;
   outline: none;
-  background: none;
   font-size: 2rem;
   color: white;
   width: 100%;
@@ -407,11 +405,11 @@ h1, h2 {
   margin: auto;
 }
 .liste_commentaire {
+  background-color: rgba(255, 255, 255, 0.4);
   color: black;
   border: 1px solid white;
   margin: 4rem auto;
   border-collapse: collapse;
-  background-color: rgba(255, 255, 255, 0.4);
 }
 .liste_commentaire th {
   background-color: rgba(255, 0, 0, 0.2);
@@ -477,6 +475,281 @@ footer {
 }
 footer img {
   width: 20rem;
+}
+/*************************************************/
+/******************* RESPONSIVE ******************/
+/*************************************************/
+/*************************************************/
+/******************* RESPONSIVE ******************/
+/*************************************************/
+/*************** MAIN ***************/
+/***** mobile 480px *****/
+@media screen and (max-width: 480px) {
+  #slider {
+    display: none;
+  }
+
+  #article article {
+    display: none;
+  }
+
+  #cars {
+    display: block;
+  }
+
+  #product_only {
+    width: 100%;
+  }
+
+  #product {
+    border: 10px ridge black;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .header_visiteur {
+    background-position: center;
+    max-width: 100%;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 5rem;
+    margin: auto;
+  }
+
+  .nav nav {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -73px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .nav nav a {
+    margin: 1rem;
+  }
+
+  .member {
+    text-align: center;
+    display: block;
+    align-items: center;
+    margin-top: 8rem;
+  }
+
+  .member img {
+    margin: 2rem;
+  }
+
+  .container_cat {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #product {
+    border: 10px ridge black;
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 80%;
+  }
+
+  #product_cat {
+    border: 10px ridge black;
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    width: 60%;
+  }
+
+  .main {
+    margin: auto;
+  }
+}
+/***** tablette 481px - 960px *****/
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .header_visiteur {
+    max-width: 100%;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem;
+    margin: auto;
+  }
+
+  .member {
+    display: block;
+  }
+
+  .member2 {
+    display: block;
+    text-align: center;
+  }
+
+  .member2 img {
+    margin-top: 2rem;
+    width: 10rem;
+  }
+
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+
+  #article article {
+    display: none;
+  }
+
+  #cars {
+    display: block;
+    width: 100%;
+  }
+
+  #product {
+    border: 10px ridge black;
+    display: block;
+    margin: 1rem auto;
+    width: 50rem;
+  }
+}
+/*************** DASHBORD ***************/
+/***** mobile 480px *****/
+@media screen and (max-width: 480px) {
+  #bar {
+    display: block;
+    width: 100%;
+  }
+
+  .aside {
+    position: fixed;
+    width: 100%;
+    display: none;
+    transition: all 1s ease-out;
+  }
+
+  .aside td {
+    width: 100%;
+  }
+
+  .aside img {
+    width: 100%;
+  }
+
+  .aside.open {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .main_c .commande {
+    width: 60%;
+    font-size: 1.3rem;
+  }
+
+  .main_d .detail {
+    width: 60%;
+    font-size: 1.3rem;
+  }
+
+  .dashbord #cars {
+    width: 80%;
+    margin: auto;
+  }
+
+  .dashbord #product {
+    width: 80%;
+  }
+
+  .form_addcars {
+    width: 80%;
+    height: 70vh;
+  }
+
+  .form_editcars {
+    width: 80%;
+    height: 70vh;
+  }
+
+  #edit_cars h1 {
+    font-size: 2rem;
+  }
+
+  #add_cars h1 {
+    font-size: 2rem;
+  }
+}
+/***** tablette 481px - 960px *****/
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .dashbord #cars {
+    display: flex;
+    width: 100%;
+  }
+
+  .main_c .commande {
+    width: 80%;
+    font-size: 1.3rem;
+  }
+
+  .main_add #add_cars {
+    margin: auto;
+  }
+
+  .form_addcars {
+    width: 60%;
+    height: 70vh;
+  }
+
+  .form_editcars {
+    width: 60%;
+    height: 70vh;
+  }
+
+  #edit_cars h1 {
+    font-size: 2rem;
+  }
+
+  #add_cars h1 {
+    font-size: 2rem;
+  }
+}
+/*************** FORM ***************/
+/***** mobile 480px *****/
+@media screen and (max-width: 480px) {
+  .form_login {
+    width: 80%;
+  }
+
+  .form_register {
+    width: 80%;
+  }
+
+  .form_contact {
+    width: 80%;
+  }
+}
+/***** tablette 481px - 960px *****/
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .form_login {
+    width: 60%;
+  }
+
+  .form_register {
+    width: 60%;
+  }
+
+  .form_contact {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=default.css.map */

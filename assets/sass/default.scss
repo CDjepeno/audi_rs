@@ -178,14 +178,14 @@ $color-td        : blue;
 }
 
 %form-style-td {
-    width: 100%;
-	color: white;
-	display: flex;
-	overflow: hidden;
-	font-size: 2rem;
-	padding: 8px 0;
-	margin: 8px 0;
-	border-bottom: 1px solid red;
+	border-bottom : 1px solid red;
+    width         : 100%;
+	color         : white;
+	display       : flex;
+	overflow      : hidden;
+	font-size     : 2rem;
+	padding       : 8px 0;
+	margin        : 8px 0;
 }
 
 %header {
@@ -276,33 +276,33 @@ $color-td        : blue;
 }
 
 %table-style {
-    border: 1px solid red;
-    width:60rem;
-    padding: 1rem;
+    padding : 1rem;
+    border  : 1px solid red;
+    width   : 60rem;
 }
 
 %main_dashboard {
-    margin: 20px auto;
-    width: 80%;
-    text-align: center;
+    text-align : center;
+    margin     : 20px auto;
+    width      : 80%;
 }
 
 %table-dasboard {
-    border-collapse: collapse;
-    text-align: center;
-    margin: 50px auto;
-    color: white;
+    border-collapse : collapse;
+    text-align      : center;
+    margin          : 50px auto;
+    color           : white;
     th,td {
-        border: 1px solid blue;
-        width: 20rem;
-        padding: 1rem;
+        padding : 1rem;
+        border  : 1px solid blue;
+        width   : 20rem;
     }
 }
 
 %table-dasboard-style {
-    border: 1px solid blue;
-    width: 20rem;
-    padding: 1rem;
+    padding : 1rem;
+    border  : 1px solid blue;
+    width   : 20rem;
 }
 
 
@@ -337,20 +337,20 @@ html {
     }
 
     img {
-        max-width: 100%;
+        max-width : 100%;
     }
     
     a,p,span {
-        color: white;
+        color : white;
     }
 }
 
 *:hover {
-	transition: all .3s ease 0s;
+	transition : all .3s ease 0s;
 }
 
 a, a:hover, a:visited, a:active {
-	text-decoration: none;
+	text-decoration : none;
 }
 
 .container {
@@ -358,16 +358,8 @@ a, a:hover, a:visited, a:active {
 }
 
 h1,h2 {
-    color: white;
+    color : white;
 }
-
-
-/***** DASHBORD *****/
-
-
-
-/***** FORMULAIRES *****/
-
 
 
 
@@ -391,7 +383,7 @@ h1,h2 {
 /***** Nos services *****/
 #article {
 	justify-content : space-between;
-	margin   : 4rem auto;
+	margin          : 4rem auto;
     display         : flex;
     text-align      :center ;
     article {
@@ -410,9 +402,9 @@ h1,h2 {
         @include div-products(40%);
 
         .description {
-            text-align: center;
-            margin: auto;
-            width:100%;
+            text-align : center;
+            margin     : auto;
+            width      :100%;
         }
 
         .btn {
@@ -453,7 +445,7 @@ h1,h2 {
 /*************************************************/
 /******************* DASHBOARD *******************/
 /*************************************************/
-@import 'dashbord';
+@import 'dashboard';
 
 
 
@@ -466,12 +458,12 @@ h1,h2 {
         @extend %form-style-td;
 
         textarea{
-            border: none;
-            outline: none;
-            background: none;
-            font-size: 2rem;
-            color: white;
-            width: 100%;
+            background : none;
+            border     : none;
+            outline    : none;
+            font-size  : 2rem;
+            color      : white;
+            width      : 100%;
         } 
     }
 
@@ -485,32 +477,25 @@ h1,h2 {
 }
 
 .liste_commentaire {
-    color: black;
-	border: 1px solid white;
-	margin:  4rem auto;
-	border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color : rgba(255, 255, 255, 0.4);
+    color            : black;
+	border           : 1px solid white;
+	margin           :  4rem auto;
+	border-collapse  : collapse;
     
     th{
-        background-color: rgba(255, 0, 0, 0.2);
-        border: 1px solid white;
+        background-color : rgba(255, 0, 0, 0.2);
+        border           : 1px solid white;
     }
     td{
-        border: 1px solid white;
-        width: 200px;
+        border : 1px solid white;
+        width  : 200px;
     }
 
     .message{
-        width: 50rem;
+        width : 50rem;
     }
 }
-
-
-
-
-
-
-
 
 
 
@@ -530,7 +515,7 @@ h1,h2 {
     #pseudo_register,#mail_register,#password1_register,#password2_register  {
 
         &::placeholder{
-            color: $background-form;
+            color : $background-form;
         } 
     }
 
@@ -587,3 +572,8 @@ footer {
         }
     }
 }
+
+/*************************************************/
+/******************* RESPONSIVE ******************/
+/*************************************************/
+@import 'responsive';
