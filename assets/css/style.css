@@ -29,12 +29,12 @@ body {
     padding: 0;
     font-size: 1.6rem;
     line-height: 1.6;
-	font-size: 1.6rem;
 	color: rgba(0,0,0,0.5);	
-	background-color: #1C1F23;
 	font-family: "Open Sans", Arial, sans-serif;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: #1C1F23;
+	font-size: 1.6rem;
 }
 
 a, a:hover, a:visited, a:active {
@@ -119,6 +119,8 @@ p{
     color: white;
 }
 
+
+
 #bar {
     display: none;
 }
@@ -190,13 +192,11 @@ form span{
 .nav nav {
 	display: flex;
 	justify-content: flex-end;
-	flex-direction: row;
 	padding: 2.5rem 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: -73px;
 	margin: 10px;
-	text-align: center;
 }
 
 .nav nav a {
@@ -214,20 +214,19 @@ form span{
 }
 
 .header_visiteur {
-	max-width: 100%;
+	width: 100%;
 	background-image: url('../img/header.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 45% 28%;
+	background-position: center;
 	color: white;
 	padding:5rem;
-	margin: auto;
 }
 
-/* .toggle {
+.toggle {
 	padding: 10px 20px;
 	text-align: right;
-} */
+}
 
 .member img {
 	margin-left: 4rem;
@@ -281,14 +280,25 @@ header .fa {
 	margin: 20px auto;
 }
 
-/* .main {
+.main {
 	width: 100%;
 	height: 60rem;
-} */
+}
 
-/* .main {
+.main {
 	display: block;
-} */
+}
+
+#next, #prew {
+	padding: 2rem;
+	border: none;
+	background: rgba(128,128,128,0.5);
+	font-size: 3rem;
+	color: black;
+	position: absolute;
+	top: 65%;
+}
+
 
 /***** Nos services *****/
 #article article {
@@ -404,10 +414,8 @@ header .fa {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 45% 28%;
-	max-width: 100%;
 	color: white;
 	padding:5rem;
-	margin: auto;
 }
 
 .header_dashboard h2:hover {
@@ -496,8 +504,7 @@ header .fa {
 
 /***** véhicule commandé *****/
 .main_c {
-	margin: 20px auto;
-	width: 80%;
+    margin: 20px auto;
 }
 
 .main_c .commande {
@@ -512,33 +519,35 @@ header .fa {
     width: 20rem;
     padding: 1rem;
 }
+.main_c .commande a {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .main_c .commande td {
-	border: 1px solid blue;
+    border: 1px solid blue;
     width: 20rem;
     padding: 1rem;
-}
- 
-.main_c .commande a {
-	text-decoration: underline;
-	cursor: pointer;
-}
+} 
 
 
 /***** Détail véhicule commander *****/
 .main_d {
-	margin: 0 auto;
-	width: 60%;
+    margin: 20px auto;
 }
 
 .main_d .detail {
     border-collapse: collapse;
     text-align: center;
     margin: 50px auto;
-	color: white;
-	width: 100%;
+    color: white;
 }
 
+.main_d .detail {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto;
+}
 
 .main_d .detail th {
     border: 1px solid blue;
@@ -883,7 +892,7 @@ h1{
 	margin: auto;
 }
 
-.form_login .email,.password {
+.form_login .email,.password{
 	width: 100%;
 	color: white;
 	display: flex;
@@ -909,7 +918,7 @@ h1{
 	border: 2px solid red;
 	color: white;
 	padding: 5px;
-	margin: 1rem;
+	margin-top: 10px;
 	cursor: pointer;
 }
 
@@ -1032,7 +1041,7 @@ footer h2:hover {
 		display: block;
 		margin: 2rem auto;
 		text-align: center;
-		width:80%;
+		width:60%;
 	}
 	.main {
 		margin: auto;
