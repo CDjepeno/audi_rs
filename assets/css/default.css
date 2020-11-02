@@ -65,30 +65,30 @@ footer img:hover, .header_dashboard .member img:hover, .header_visiteur .member 
 }
 
 .header_dashboard, .header_visiteur {
-  background-position: 45% 28%;
   background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  background-position: 45% 28%;
   padding: 5rem;
+  max-width: 100%;
   color: white;
   margin: auto;
 }
+
 .header_dashboard .nav, .header_visiteur .nav {
   justify-content: space-around;
   display: flex;
   align-items: baseline;
 }
 .header_dashboard .nav nav, .header_visiteur .nav nav {
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: "row";
   text-transform: uppercase;
-  flex-direction: row;
   letter-spacing: 1px;
   margin-bottom: -73px;
-  display: flex;
   padding: 2.5rem 0;
-  text-align: center;
   margin: 10px;
+  text-align: center;
 }
 .header_dashboard .nav nav a, .header_visiteur .nav nav a {
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
@@ -102,17 +102,10 @@ footer img:hover, .header_dashboard .member img:hover, .header_visiteur .member 
   color: white;
 }
 .header_dashboard .member, .header_visiteur .member {
-  -webkit-box-align: center;
-  justify-content: space-between;
-  -webkit-box-pack: justify;
-  -ms-flex-align: center;
-  -ms-flex-pack: justify;
-  align-items: center;
   text-align: center;
-  margin-top: 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  align-items: center;
+  margin-top: 2.5rem;
 }
 .header_dashboard .member img, .header_visiteur .member img {
   margin-left: 4rem;
@@ -333,7 +326,7 @@ h1, h2 {
   text-align: center;
   border: 10px solid black;
   display: block;
-  width: 25%;
+  width: 35%;
 }
 
 /***** ajouter un véhicule *****/
@@ -484,7 +477,30 @@ footer img {
 /*************************************************/
 /*************** MAIN ***************/
 /***** mobile 480px *****/
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
+  .nav nav {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: -73px;
+    padding: 2.5rem 0;
+    margin: 10px;
+    text-align: center;
+  }
+  .nav nav a {
+    margin: 1rem;
+  }
+  .nav .member {
+    text-align: center;
+    display: "column";
+    align-items: center;
+    margin-top: 8rem;
+  }
+  .nav .member img {
+    margin: 2rem;
+  }
+
   #slider {
     display: none;
   }
@@ -496,133 +512,50 @@ footer img {
   #cars {
     display: block;
   }
+  #cars #product {
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 10px solid black;
+    display: block;
+    width: 100%;
+  }
 
   #product_only {
     width: 100%;
   }
 
-  #product {
-    border: 10px ridge black;
-    display: block;
-    margin: 2rem auto;
-    text-align: center;
-    width: 80%;
-  }
-
-  .header_visiteur {
-    background-position: center;
-    max-width: 100%;
-    background-image: url("../img/header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    padding: 5rem;
-    margin: auto;
-  }
-
-  .nav nav {
-    display: flex;
-    flex-direction: column;
-    padding: 2.5rem 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: -73px;
-    margin: 10px;
-    text-align: center;
-  }
-
-  .nav nav a {
-    margin: 1rem;
-  }
-
-  .member {
-    text-align: center;
-    display: block;
-    align-items: center;
-    margin-top: 8rem;
-  }
-
-  .member img {
-    margin: 2rem;
-  }
-
-  .container_cat {
+  .container {
     display: block;
     width: 80%;
     margin: 0 auto;
   }
 
   #product {
-    border: 10px ridge black;
-    display: block;
     margin-bottom: 2rem;
     text-align: center;
-    width: 80%;
-  }
-
-  #product_cat {
-    border: 10px ridge black;
-    display: block;
-    margin: 2rem auto;
-    text-align: center;
-    width: 60%;
-  }
-
-  .main {
-    margin: auto;
-  }
-}
-/***** tablette 481px - 960px *****/
-@media screen and (min-width: 481px) and (max-width: 960px) {
-  .header_visiteur {
-    max-width: 100%;
-    background-image: url("../img/header.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 5rem;
-    margin: auto;
-  }
-
-  .member {
-    display: block;
-  }
-
-  .member2 {
-    display: block;
-    text-align: center;
-  }
-
-  .member2 img {
-    margin-top: 2rem;
-    width: 10rem;
-  }
-
-  .container {
-    width: 70%;
-    margin: auto;
-  }
-
-  #article article {
-    display: none;
-  }
-
-  #cars {
+    border: 10px solid black;
     display: block;
     width: 100%;
   }
 
-  #product {
-    border: 10px ridge black;
-    display: block;
-    margin: 1rem auto;
-    width: 50rem;
+  /**** FORM ****/
+  .form_login {
+    width: 80%;
   }
-}
-/*************** DASHBORD ***************/
-/***** mobile 480px *****/
-@media screen and (max-width: 480px) {
+
+  .form_register {
+    width: 80%;
+  }
+
+  .form_contact {
+    width: 80%;
+  }
+
+  .form_dashboard {
+    width: 80%;
+  }
+
+  /**** DASHBORD ****/
   #bar {
     display: block;
     width: 100%;
@@ -635,14 +568,6 @@ footer img {
     transition: all 1s ease-out;
   }
 
-  .aside td {
-    width: 100%;
-  }
-
-  .aside img {
-    width: 100%;
-  }
-
   .aside.open {
     display: block;
     position: fixed;
@@ -651,45 +576,48 @@ footer img {
     width: 100%;
   }
 
+  .dashbord .main {
+    margin: auto;
+  }
+
   .main_c .commande {
     width: 60%;
     font-size: 1.3rem;
   }
 
-  .main_d .detail {
-    width: 60%;
-    font-size: 1.3rem;
-  }
-
-  .dashbord #cars {
+  .main #cars {
     width: 80%;
     margin: auto;
   }
-
-  .dashbord #product {
-    width: 80%;
-  }
-
-  .form_addcars {
-    width: 80%;
-    height: 70vh;
-  }
-
-  .form_editcars {
-    width: 80%;
-    height: 70vh;
-  }
-
-  #edit_cars h1 {
-    font-size: 2rem;
-  }
-
-  #add_cars h1 {
-    font-size: 2rem;
+  .main #cars #product {
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 10px solid black;
+    display: block;
+    width: 100%;
   }
 }
 /***** tablette 481px - 960px *****/
-@media screen and (min-width: 481px) and (max-width: 960px) {
+@media (min-width: 481px) and (max-width: 960px) {
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+  .container #article article {
+    display: none;
+  }
+
+  #cars #product {
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 10px solid black;
+    display: block;
+    width: 40%;
+  }
+}
+/*************** DASHBORD ***************/
+/***** tablette 481px - 960px *****/
+@media only screen and (min-width: 481px) and (max-width: 960px) {
   .dashbord #cars {
     display: flex;
     width: 100%;
@@ -724,7 +652,7 @@ footer img {
 }
 /*************** FORM ***************/
 /***** mobile 480px *****/
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .form_login {
     width: 80%;
   }
@@ -736,9 +664,13 @@ footer img {
   .form_contact {
     width: 80%;
   }
+
+  .form_dashboard {
+    width: 80%;
+  }
 }
 /***** tablette 481px - 960px *****/
-@media screen and (min-width: 481px) and (max-width: 960px) {
+@media only screen and (min-width: 481px) and (max-width: 960px) {
   .form_login {
     width: 60%;
   }
@@ -749,6 +681,10 @@ footer img {
 
   .form_contact {
     width: 50%;
+  }
+
+  .form_dashboard {
+    width: 60%;
   }
 }
 

@@ -4,7 +4,37 @@
 
 /*************** MAIN ***************/
 /***** mobile 480px *****/
-@media screen and (max-width:480px){
+@media(max-width:480px) {
+	// Accueil
+	.header_visiteur {
+		@extend %header-style;
+	}
+
+	.nav  {
+		nav {
+		 	display        : flex;
+			flex-direction : column;
+			text-transform : uppercase;
+			letter-spacing : 1px;
+			margin-bottom  : -73px;
+			padding        : 2.5rem 0;
+			margin         : 10px;
+			text-align     : center;
+
+			a {
+				margin: 1rem;
+			}
+		}
+
+		.member {	 
+			@include member('column', 8rem);
+
+			img {
+				margin: 2rem;
+			}			
+		}
+	}
+
 	#slider {
 		display: none;
 	}
@@ -13,174 +43,115 @@
 	}
 	#cars  {
 		display: block;
+
+		#product {
+			@include div-products(100%);
+		}
 	}
+
+	// Product only
 	#product_only {
 		width: 100%;
 	}
-	#product {
-		border: 10px ridge black;
-		display: block;
-		margin: 2rem auto;
-		text-align: center;
-		width:80%;
-	}
-	.header_visiteur {
-		background-position: center;
-		max-width: 100%;
-		background-image: url('../img/header.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		color: white;
-		padding:5rem;
-		margin: auto;
-	}
-	.nav nav {
-		display: flex;
-		flex-direction: column;
-		padding: 2.5rem 0;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		margin-bottom: -73px;
-		margin: 10px;
-		text-align: center;
-	}
-	.nav nav a {
-		margin: 1rem;
-	}
-	.member {
-		text-align: center;
-		display: block;
-		align-items: center;
-		margin-top: 8rem;
-	}
-	.member img {
-		margin: 2rem;
-	}
-	.container_cat {
+	
+	// Product catégory
+
+	.container {
 		display: block;
 		width: 80%;
 		margin: 0 auto;
 	}
 	#product {
-		border: 10px ridge black;
-		display: block;
-		margin-bottom: 2rem;
-		text-align: center;
-		width:80%;
+		@include div-products(100%);
 	}
-	#product_cat {
-		border: 10px ridge black;
-		display: block;
-		margin: 2rem auto;
-		text-align: center;
-		width:60%;
-	}
-	.main {
-		margin: auto;
-	}
-}
 
-/***** tablette 481px - 960px *****/
-@media screen and (min-width:481px) and (max-width:960px){
-	.header_visiteur {
-		max-width: 100%;
-		background-image: url('../img/header.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		color: white;
-		padding:5rem;
-		margin: auto;
+	/**** FORM ****/
+	.form_login {
+			width: 80%;
+		}
+	.form_register {
+			width: 80%;
+		}
+	.form_contact {
+			width: 80%;
+		}
+
+	.form_dashboard {
+		width:80%
 	}
-	.member {
-		display: block;
-	}
-	.member2 {
-		display: block;
-		text-align: center;
-	}
-	.member2 img {
-		margin-top: 2rem;
-		width: 10rem;
-	}
-	.container {
-		width: 70%;
-		margin: auto;
-	}
-	#article article {
-		display: none;
-	}
-	#cars {
+
+	/**** DASHBORD ****/
+	// Dashbord
+	#bar {
 		display: block;
 		width: 100%;
 	}
-	#product {
-		border: 10px ridge black;
-		display: block;
-		margin: 1rem auto;
-		width:50rem;
-	}
-}
 
-/*************** DASHBORD ***************/
-/***** mobile 480px *****/
-@media screen and (max-width:480px) {
-    #bar {
-        display: block;
-        width: 100%;
-    }
-    .aside {
-        position : fixed;
-        width: 100%;
-        display: none;
-        transition: all 1s ease-out;
-    }
-    .aside td {
-        width: 100%;
-    }
-    .aside img {
-        width: 100%;
-    }
-    .aside.open {
-        display: block;
+	.aside {
+		position : fixed;
+		width: 100%;
+		display: none;
+		transition: all 1s ease-out;
+	}
+
+	.aside.open {
+		display: block;
         position : fixed;
         height: 100vh;
         z-index: 1;
         width: 100%;
-    }
-    .main_c .commande {
+	}
+	.dashbord .main {
+		margin: auto;
+	}
+
+	// Order
+	.main_c .commande {
         width: 60%;
         font-size: 1.3rem;
     }
-    .main_d .detail {
-        width: 60%;
-        font-size: 1.3rem;
-    }
-    .dashbord #cars {
-        width: 80%;
+
+	// Cars sale
+	.main #cars {
+		width: 80%;
         margin: auto;
-    }
-    .dashbord #product {
-        width: 80%;
-    }
-    .form_addcars {
-        width: 80%;
-        height: 70vh;
-    }
-    .form_editcars {
-        width: 80%;
-        height: 70vh;
-    }
-    #edit_cars h1 {
-          font-size: 2rem;
-    }
-    #add_cars h1 {
-          font-size: 2rem;
-    }
+
+		#product {
+			@include div-products(100%);
+		}
+	}
+
 }
 
+
+
 /***** tablette 481px - 960px *****/
-@media screen and (min-width:481px) and (max-width:960px) {
+@media(min-width:481px) and (max-width:960px){
+	.header_visiteur {
+		 @extend %header;
+	}
+	
+	.container {
+		width: 70%;
+		margin: auto;
+
+		#article article {
+		display: none;
+		}
+	}
+	
+	#cars  {
+		@extend %div-cars;
+
+		#product {
+			@include div-products(40%);
+		}
+	}
+}
+
+/*************** DASHBORD ***************/
+/***** tablette 481px - 960px *****/
+@media only screen and (min-width:481px) and (max-width:960px) {
     .dashbord #cars {
 		display: flex;
 		width: 100%;
@@ -210,7 +181,7 @@
 
 /*************** FORM ***************/
 /***** mobile 480px *****/
-@media screen and (max-width:480px) {
+@media only screen and (max-width:480px) {
 	.form_login {
 		width: 80%;
 	}
@@ -220,10 +191,13 @@
 	.form_contact {
 		width: 80%;
 	}
+	.form_dashboard {
+		width:80%
+	}
 }
 
 /***** tablette 481px - 960px *****/
-@media screen and (min-width:481px) and (max-width:960px){
+@media only screen and (min-width:481px) and (max-width:960px){
 	.form_login {
 		width: 60%;
 	}
@@ -232,5 +206,8 @@
 	}
 	.form_contact {
 		width: 50%;
+	}
+	.form_dashboard {
+		width:60%
 	}
 }

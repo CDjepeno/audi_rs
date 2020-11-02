@@ -72,14 +72,21 @@ $color-td        : blue;
 }
 
 @mixin nav($direction) {
+    display        : flex;
     flex-direction : $direction;
     text-transform : uppercase;
     letter-spacing : 1px;
     margin-bottom  : -73px;
-    display        : flex;
     padding        : 2.5rem 0;
     margin         : 10px;
     text-align     : center;
+}
+
+@mixin member($display, $margin-top) {
+    text-align   :center;
+    display      : $display;
+    align-items  : center;
+    margin-top   : $margin-top;
 }
 
 @mixin div-info($color) {
@@ -188,15 +195,19 @@ $color-td        : blue;
 	margin        : 8px 0;
 }
 
-%header {
-	background-position : 45% 28%;
+%header-style {
     background-image    : url('../img/header.jpg');
 	background-repeat   : no-repeat;
 	background-size     : cover;
-    max-width           : 100%;
+    background-position : 45% 28%;
     padding             :5rem;
+    max-width           : 100%;
 	color               : white;
     margin              : auto;
+}
+
+%header {
+	@extend %header-style;
 
     .nav {
         justify-content : space-around;
@@ -205,15 +216,7 @@ $color-td        : blue;
     }
 
     .nav nav {
-        justify-content : flex-end;
-        text-transform  : uppercase;
-        flex-direction  : row;
-        letter-spacing  : 1px;
-        margin-bottom   : -73px;
-        display         : flex;
-        padding         : 2.5rem 0;
-        text-align      : center;
-        margin          : 10px;
+        @include nav("row");
     }
 
     .nav nav a {
@@ -230,17 +233,10 @@ $color-td        : blue;
     }
 
     .member {
-        -webkit-box-align : center;
-        justify-content   : space-between;
-        -webkit-box-pack  : justify;
-        -ms-flex-align    : center;
-        -ms-flex-pack     : justify;
-        align-items       : center;
         text-align        :center;
-        margin-top        : 2.5rem;
-        display           : -webkit-box;
-        display           : -ms-flexbox;
         display           : flex;
+        align-items       : center;
+        margin-top        : 2.5rem;
     }
 
     .member img {
