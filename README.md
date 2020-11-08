@@ -5,9 +5,10 @@
 
 # Site de vente de véhicule audi entre particuliers:
 
-- Création d'un mini-framework Php
-- Projet CRUD
-- Sécurisation de formulaire coter Front avec Javascript
-- Sécurisation de formulaire coter Back avec Php
+- Création d'un mini-framework Php.
+- Projet CRUD.
+- Mise en place d'un système de commande pour les véhicules.
+- Sécurisation de formulaire coter Front avec Javascript.
+- Sécurisation de formulaire coter Back avec Php.
 
 La configuration de la base de donnée se trouve dans le dossier utilities/config.php.
