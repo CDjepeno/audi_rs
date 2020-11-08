@@ -190,12 +190,20 @@ a, a:hover, a:visited, a:active {
 }
 
 .container {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 
 h1, h2 {
   color: white;
+}
+
+.alert p {
+  background-color: red;
+}
+
+.sucess p {
+  background-color: green;
 }
 
 /***************************************************/
@@ -208,6 +216,7 @@ h1, h2 {
   margin-top: 25px;
   border: 20px solid black;
   margin: 20px auto;
+  width: 70%;
 }
 
 /***** Nos services *****/
@@ -218,7 +227,7 @@ h1, h2 {
   text-align: center;
 }
 #article article {
-  width: 30%;
+  width: 40%;
 }
 #article .fa {
   color: white;
@@ -230,7 +239,7 @@ h1, h2 {
   text-align: center;
   border: 10px solid black;
   display: block;
-  width: 40%;
+  width: 30%;
 }
 #cars #product .description {
   text-align: center;

@@ -254,7 +254,7 @@ $color-td        : blue;
 }
 
 %hover-h2 {
-	color            : red;
+	color : red;
 }
 
 %button-style {
@@ -350,11 +350,22 @@ a, a:hover, a:visited, a:active {
 }
 
 .container {
-    @include container(60%,0);
+    @include container(80%,0);
 }
 
 h1,h2 {
     color : white;
+}
+
+.alert {
+    p {
+        background-color:red;
+    }
+}
+.sucess {
+    p {
+        background-color:green;
+    }
 }
 
 
@@ -373,7 +384,8 @@ h1,h2 {
 	text-align : center;
 	margin-top : 25px;
 	border     : 20px solid black;
-	margin     : 20px auto;
+    margin     : 20px auto;
+    width: 70%;
 }
 
 /***** Nos services *****/
@@ -383,7 +395,7 @@ h1,h2 {
     display         : flex;
     text-align      :center ;
     article {
-        width : 30%
+        width : 40%
     }
     .fa {
         color : white
@@ -395,7 +407,7 @@ h1,h2 {
     @extend %div-cars;
     
     #product {
-        @include div-products(40%);
+        @include div-products(30%);
 
         .description {
             text-align : center;
