@@ -51,7 +51,7 @@
         </tr>
         <?php endforeach ?>
     </table>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/contact.js"></script>
 </div>
 
 <?php require_once "views/footer_view.php"; ?>

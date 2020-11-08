@@ -1,13 +1,13 @@
 <?php include_once "header_view.php" ?>
 
 <div class="container">
-    <?php foreach ($products as $p): ?>
-        <section id="cars">
+    <section id="cars">
+        <?php foreach ($products as $p): ?>
             <article id="product">
                 <a href="index.php?class=product&action=show&id=<?= $p->getId() ?>"> <h2><?= $p->getName() ?></h2></a>
                 <section class="img">
                     <a href="index.php?class=product&action=show&id=<?= $p->getId() ?>">
-                    <img src="assets/img/product/<?= htmlspecialchars ($p->getpath()) ?>" alt="Audi" />
+                    <img src="assets/img/upload/<?= htmlspecialchars ($p->getpath()) ?>" alt="Audi" />
                 </section>
                 </a>
                 <br>

@@ -8,6 +8,7 @@
     <div class="form_dashboard">
         <form action="" method="post" class="add" id="edit_cars" enctype="multipart/form-data">
             <h1>Modifier <?= $product_name ?></h1>
+            
             <table>
                 <tr>
                     <span id='erreur_addcars'></span>

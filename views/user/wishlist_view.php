@@ -13,7 +13,7 @@
                 <h2><?= $w[0]->getName() ?></h2>           
                 <section class="img">
                     <a href="index.php?class=Product&action=show&id=<?= $w[0]->getId()?>">
-                    <img src="assets/img/product/<?= htmlspecialchars ($w[0]->getPath()) ?>" alt="Audi" />
+                    <img src="assets/img/upload/<?= htmlspecialchars ($w[0]->getPath()) ?>" alt="Audi" />
                     </a>
                 </section>
                 <section class="description">
