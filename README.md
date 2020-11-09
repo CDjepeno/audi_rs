@@ -11,6 +11,6 @@
 - Mise en place d'un système de commande pour les véhicules.
 - Sécurisation de formulaire coter Front avec Javascript.
 - Sécurisation de formulaire coter Back avec Php.
-- Interface d'aministration pour les utilisateurs.
+- Interface d'administration pour les utilisateurs.
 
 La configuration de la base de donnée se trouve dans le dossier utilities/config.php.
