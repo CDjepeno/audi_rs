@@ -13,8 +13,7 @@ class Product
     private $edited_at;
     private $COUNT;
     private $nombre;
-
-
+    private $OrderDetails;
 
     /**
      * Get the value of id
@@ -211,12 +210,29 @@ class Product
         return $this->name;
     }
 
+     /**
+     * @return OrderDetails[]
+     */
+    public function getOrderDetails()
+    {
+        return $this->OrderDetails;
+    }
+
+    /**
+     * Permet de récupérer si un véhicule est réserver
+     *
+     * @return void
+     */
+   public function getCarBooking() {
+        $car = $this->OrderDetails;
+   }
+
     /**
      * Ajouter un produit a la base de donnée
      *
      * @return boolean
      */
-    public function add() : bool
+    public function add() : array
     {
         $cnx=new Database();
         return $cnx->insert(

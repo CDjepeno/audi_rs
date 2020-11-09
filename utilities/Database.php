@@ -27,9 +27,9 @@ class Database
      */
     public function selectOne(string $class ,string $requete, array $params = [])
     {
-        $stmt= $this->cnx->prepare($requete);
-        $stmt->execute($params);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, $class);
+        $stmt = $this->cnx->prepare($requete);
+        $stmt -> execute($params);
+        $stmt -> setFetchMode(PDO::FETCH_CLASS, $class);
         $result = $stmt->fetch();
         return $result;
     }
@@ -62,8 +62,8 @@ class Database
      */
     public function insert(string $requete, array $params)
     {
-        $stmt = $this->cnx->prepare($requete);
-        $result= $stmt->execute($params);
+        $stmt   = $this->cnx->prepare($requete);
+        $result = $stmt->execute($params);
         
         return $result;
     }
@@ -87,7 +87,7 @@ class Database
      */
     public function delete(string $requete, array $params)
     {
-        $stmt= $this->cnx->prepare($requete);
+        $stmt = $this->cnx->prepare($requete);
         return $stmt->execute($params);
     }
 
@@ -100,7 +100,7 @@ class Database
      */
     public function edit(string $requete, array $params)
     {
-        $stmt= $this->cnx->prepare($requete);
+        $stmt = $this->cnx->prepare($requete);
         return $stmt->execute($params);
     }
 

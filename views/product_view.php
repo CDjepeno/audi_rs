@@ -9,6 +9,14 @@
                     <a class="btn" id="favoris"  href="index.php?class=product&action=wishlist&id=<?= $product->getId() ?>">ajouter au favoris</a>
                     <a class="btn" id="commande" href="index.php?class=Order&action=addcommande&id=<?= $product->getId()?>">Commander</a>
                 <?php endif; ?>
+                 <!-- Message d'alert -->
+                <?php if(!empty($alert)): ?>
+                    <?php if(!empty($alert)): ?>
+                    <div class="alert">
+                        <p><?= $alert; ?></p>
+                    </div>
+                    <?php endif ?>
+                <?php endif ?> 
         </article>
     </div>
     <script src="assets/js/product_view.js"></script>	
