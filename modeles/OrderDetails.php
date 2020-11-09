@@ -54,7 +54,41 @@ class OrderDetails
         return $this;
     }
 
-    
+    /**
+     * Récupère tous les véhicules commandés
+     *
+     * @return void
+     */
+    public function getBookings() {
+        $result = [];
+        $cnx=new Database();
+        $result=$cnx->selectMany(
+            "OrderDetails",
+            "SELECT `id_product` FROM `orderdetails`"
+        );
+        foreach($result as $r) {
+            $id[] = $r-> getId_product();
+        }
+        
+        return $id;
+    }
+
+    /**
+     * Permet de vérifier la disponibilité d'un véhicule 
+     *
+     * @return void
+     */
+    public function isbookable($id_product) {
+        // Connaitre les véhicules qui ne sont pas disponible
+        $notAvailableCars = $this->getBookings();
+
+        if(in_array($id_product, $notAvailableCars)) {
+            return false;
+        } else {
+            return true;
+        } 
+    }
+
     /**
      * récupération de toutes les informations qui font partie d'une commande
      *
