@@ -7,6 +7,7 @@
 
 - Création d'un mini-framework Php.
 - Projet CRUD.
+- Requêtes avec jointures et agrégations.
 - Mise en place d'un système de commande pour les véhicules.
 - Sécurisation de formulaire coter Front avec Javascript.
 - Sécurisation de formulaire coter Back avec Php.
