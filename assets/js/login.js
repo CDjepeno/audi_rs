@@ -1,5 +1,6 @@
 "Use strict";
-
+/*******************************************************/
+/*******************************************************/
 /************ Vérification formulaire login ************/
 
 let envoi_login = document.getElementById('login');
