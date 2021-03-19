@@ -27,7 +27,7 @@
 ![sass-100x100](https://user-images.githubusercontent.com/43074465/98483226-e0b46900-2206-11eb-9529-73a273dbcdb4.png)
 ![Webpack-100x100](https://user-images.githubusercontent.com/43074465/98483244-f164df00-2206-11eb-899e-f7e096dc9c85.png)
 
-# Site de vente de véhicule audi entre particuliers:
+## Features
 
 - Création d'un mini-framework Php.
 - Projet CRUD.
@@ -37,4 +37,13 @@
 - Sécurisation de formulaire coter Back avec Php.
 - Interface d'administration pour les utilisateurs.
 
-La configuration de la base de donnée se trouve dans le dossier utilities/config.php.
+
+## Requirements
+
+- La configuration de la base de donnée se trouve dans le dossier utilities/config.php.
+
+## Getting Started
+```bash
+$ git clone https://github.com/CDjepeno/audi_rs.git
+$ cd audi_rs
+```
