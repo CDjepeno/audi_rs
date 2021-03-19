@@ -8,8 +8,8 @@
 
 
 <p align="center">
-    <img src="https://img.shields.io/badge/PHP-7.3-blue" alt="php version">
-    <img src="https://img.shields.io/badge/SwiftMailer-6.0-blue" alt="php version">
+    <img src="https://img.shields.io/badge/Version%20PHP-7.3-blue" alt="php version">
+    <img src="https://img.shields.io/badge/Version%20SwiftMailer-6.0-blue" alt="php version">
 </p>
 
 ![audi_rs](https://user-images.githubusercontent.com/43074465/111721577-7d93ac80-8860-11eb-9394-50d7a9549b2a.png)
