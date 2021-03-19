@@ -1,6 +1,11 @@
 <p align="center"><h1 align="center">
-  ![logo](https://user-images.githubusercontent.com/43074465/111719695-b16cd300-885c-11eb-87df-ef41a11703b7.jpg) Audi-Rs ![logo](https://user-images.githubusercontent.com/43074465/111719695-b16cd300-885c-11eb-87df-ef41a11703b7.jpg)
+🚀 Audi-Rs 🚀
 </h1>
+
+
+<p align="center">
+    <img src="https://img.shields.io/badge/PHP-7.3-blue" alt="php version">
+</p>
 
 
 
